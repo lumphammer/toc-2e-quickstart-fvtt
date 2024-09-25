@@ -1,10 +1,10 @@
 {
-  "id": "trail-of-cthulhu-2e",
-  "title": "Trail of Cthulhu 2nd Edition",
-  "description": "Trail of Cthulhu 2nd Edition",
-  "version": "1.0.0-alpha.5",
+  "id": "toc-2e-quickstart",
+  "title": "Trail of Cthulhu 2nd Edition Quickstart",
+  "description": "Quickstart text, pregenerated PCs, and a few other things",
+  "version": "1.0.0-alpha.1",
   "authors": [{ "name": "Neil de Carteret" }],
-  "esmodules": ["trail-of-cthulhu-2e.js"],
+  "esmodules": ["toc2eQuickstart.js"],
   "compatibility": {
     "minimum": "12",
     "verified": "12",
@@ -24,34 +24,34 @@
   },
   "packs": [
     {
-      "name": "trail-of-cthulhu-2e-pc-abilities",
-      "label": "Trail of Cthulhu 2e PC Abilities",
+      "name": "pc-abilities",
+      "label": "Quickstart PC Abilities",
       "system": "investigator",
       "type": "Item"
     },
     {
-      "name": "trail-of-cthulhu-2e-purist-pc-abilities",
-      "label": "Trail of Cthulhu 2e\nPurist PC Abilities",
+      "name": "quickstart-book",
+      "label": "Quickstart Book",
       "system": "investigator",
-      "type": "Item"
+      "type": "JournalEntry"
     },
     {
-      "name": "trail-of-cthulhu-2e-pulp-pc-abilities",
-      "label": "Trail of Cthulhu 2e\nPulp PC Abilities",
+      "name": "pregens",
+      "label": "Pregenerated Characters",
       "system": "investigator",
-      "type": "Item"
+      "type": "Actor"
     }
   ],
   "packFolders": [
     {
-      "name": "Trail of Cthulhu 2e",
+      "name": "Trail of Cthulhu 2e Quickstart",
       "sorting": "m",
       "packs": [
         "trail-of-cthulhu-2e-pc-abilities",
         "trail-of-cthulhu-2e-pulp-pc-abilities",
         "trail-of-cthulhu-2e-purist-pc-abilities"
       ],
-      "color": "#8f4927"
+      "color": "#2c87a4"
     }
   ]
 }
