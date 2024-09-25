@@ -1,0 +1,35 @@
+name: CI/CD
+
+on:
+  - push
+  - pull_request
+
+jobs:
+  pre_job:
+    # see https://github.com/marketplace/actions/skip-duplicate-actions
+    # prevents duplicate workflow runs when they get triggered by e.g. `push`
+    # and `pull_request` events
+    runs-on: ubuntu-latest
+    outputs:
+      should_skip: ${{ steps.skip_check.outputs.should_skip }}
+    steps:
+      - id: skip_check
+        uses: fkirc/skip-duplicate-actions@v5.3.1
+        with:
+          concurrent_skipping: same_content_newer
+
+  ci-cd:
+    uses: lumphammer/gh-actions/.github/workflows/ci-cd-reusable.yml@2024-09-18.1
+    needs: pre_job
+    # skip the job is it a duplicate, but not if it's a tag (we always want to
+    # make sure we build a tag so we get a release.)
+    if: needs.pre_job.outputs.should_skip != 'true' || github.ref_type == 'tag'
+    permissions:
+      contents: write
+    with:
+      manifest_file_name: "module.json"
+      public_path: "public"
+      package_file_name: "trail-of-cthulhu-2e.zip"
+      pnpm_version: "9"
+      package_path: "build_package"
+

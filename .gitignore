@@ -1,0 +1,11 @@
+node_modules
+foundryconfig.json
+/dist
+build_package
+stats.json
+build
+stats.html
+stats
+.swc
+tsconfig.vitest-temp.json
+tsconfig.tsbuildinfo

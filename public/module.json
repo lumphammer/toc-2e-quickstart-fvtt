@@ -1,0 +1,57 @@
+{
+  "id": "trail-of-cthulhu-2e",
+  "title": "Trail of Cthulhu 2nd Edition",
+  "description": "Trail of Cthulhu 2nd Edition",
+  "version": "1.0.0-alpha.5",
+  "authors": [{ "name": "Neil de Carteret" }],
+  "esmodules": ["trail-of-cthulhu-2e.js"],
+  "compatibility": {
+    "minimum": "12",
+    "verified": "12",
+    "maximum": "12"
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "investigator",
+        "type": "system",
+        "manifest": "https://github.com/n3dst4/gumshoe-fvtt/releases/latest/download/system.json",
+        "compatibility": {
+          "verified": "8"
+        }
+      }
+    ]
+  },
+  "packs": [
+    {
+      "name": "trail-of-cthulhu-2e-pc-abilities",
+      "label": "Trail of Cthulhu 2e PC Abilities",
+      "system": "investigator",
+      "type": "Item"
+    },
+    {
+      "name": "trail-of-cthulhu-2e-purist-pc-abilities",
+      "label": "Trail of Cthulhu 2e\nPurist PC Abilities",
+      "system": "investigator",
+      "type": "Item"
+    },
+    {
+      "name": "trail-of-cthulhu-2e-pulp-pc-abilities",
+      "label": "Trail of Cthulhu 2e\nPulp PC Abilities",
+      "system": "investigator",
+      "type": "Item"
+    }
+  ],
+  "packFolders": [
+    {
+      "name": "Trail of Cthulhu 2e",
+      "sorting": "m",
+      "packs": [
+        "trail-of-cthulhu-2e-pc-abilities",
+        "trail-of-cthulhu-2e-pulp-pc-abilities",
+        "trail-of-cthulhu-2e-purist-pc-abilities"
+      ],
+      "color": "#8f4927"
+    }
+  ]
+}
