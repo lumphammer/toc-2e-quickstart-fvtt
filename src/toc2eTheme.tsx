@@ -43,9 +43,9 @@ const metalGradient = `linear-gradient(
 
 const starfieldImage = `url(modules/${moduleId}/assets/aperture-vintage-Z6EpCdMcoUU-unsplash.jpg)`;
 
-export const trail2eThemeSeed: ThemeSeedV1 = {
+export const toc2eQuickstartThemeSeed: ThemeSeedV1 = {
   schemaVersion: "v1",
-  displayName: "Trail of Cthulhu (Premium) Theme",
+  displayName: "Trail of Cthulhu Quickstart",
   global: `
     @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
     ${averiaLibre.importStatement}

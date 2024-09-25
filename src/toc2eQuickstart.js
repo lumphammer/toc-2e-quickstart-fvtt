@@ -3,4 +3,4 @@
 // in dev, foundry loads index.js, this file, which loads investigator.ts
 
 // some of your dependencies might need this
-import "./trail-of-cthulhu-2e.ts";
+import "./toc2eQuickstart.ts";
