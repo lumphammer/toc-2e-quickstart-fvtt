@@ -6,6 +6,10 @@ import { defineConfig } from "vite";
 
 import { id } from "./public/module.json";
 
+function kebabCaseToCamelCase(str) {
+  return str.replace(/-([a-z0-9])/g, (g) => g[1].toUpperCase());
+}
+
 // original guide to using Vite for Foundry from the Lancer devs:
 // https://foundryvtt.wiki/en/development/guides/vite
 
@@ -17,7 +21,7 @@ const port = 40000;
 // if foundryconfig.json exists, use that as the foundryUrl
 if (fs.existsSync("./foundryconfig.json")) {
   foundryUrl = JSON.parse(
-    fs.readFileSync("./foundryconfig.json").toString()
+    fs.readFileSync("./foundryconfig.json").toString(),
   ).url;
 } else {
   console.log("No foundryconfig.json found, we're probably in CI");
@@ -57,7 +61,7 @@ const config = defineConfig(({ mode }) => {
                 // this is the most future-proof way to get the preamble code.
                 const fixedHtml = html.replace(
                   headTag,
-                  `${headTag}${viteClientScript}`
+                  `${headTag}${viteClientScript}`,
                 );
                 res.statusCode = proxyRes.statusCode ?? 200;
                 // copy the headers from the proxy response to the real response
@@ -120,10 +124,10 @@ const config = defineConfig(({ mode }) => {
         },
       },
       lib: {
-        name: id,
-        entry: `${id}.ts`,
+        // name: id,
+        entry: `${kebabCaseToCamelCase(id)}.ts`,
         formats: ["es"],
-        fileName: id,
+        fileName: kebabCaseToCamelCase(id),
       },
     },
 

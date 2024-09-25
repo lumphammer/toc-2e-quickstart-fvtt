@@ -29,7 +29,7 @@ jobs:
     with:
       manifest_file_name: "module.json"
       public_path: "public"
-      package_file_name: "trail-of-cthulhu-2e.zip"
+      package_file_name: "toc-2e-quickstart.zip"
       pnpm_version: "9"
       package_path: "build_package"
 

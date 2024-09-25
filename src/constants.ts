@@ -8,6 +8,7 @@ export const averiaLibre = {
 
 export const moduleId = moduleManifest.id;
 export const moduleTitle = moduleManifest.title;
+
 export const trailOfCthulhu2ePCAbilityPackName =
   "trail-of-cthulhu-2e-pc-abilities";
 export const trailOfCthulhu2ePulpPCAbilityPackName =

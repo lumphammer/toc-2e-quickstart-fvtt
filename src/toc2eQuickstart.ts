@@ -1,10 +1,10 @@
-import { moduleTitle } from "./constants";
-import processedStyles from "./trail-of-cthulhu-2e.scss?inline";
+import { moduleId, moduleTitle } from "./constants";
+import processedStyles from "./toc2eQuickstart.scss?inline";
+import { toc2eQuickstartThemeSeed } from "./toc2eTheme";
 import { trail2ePulpPreset } from "./trail2ePulpPreset";
 import { trail2ePuristPreset } from "./trail2ePuristPreset";
-import { trail2eThemeSeed } from "./trail2eTheme";
 
-const key = "trail-of-cthulhu-2e";
+// const key = "trail-of-cthulhu-2e";
 console.log(`[${moduleTitle}] initializing`);
 
 // Inject CSS
@@ -15,9 +15,9 @@ const styleElement = document.createElement("style");
 styleElement.innerHTML = processedStyles;
 document.head.appendChild(styleElement);
 
-CONFIG.Investigator?.installTheme(key, trail2eThemeSeed);
-CONFIG.Investigator?.installPreset(`${key}-purist`, trail2ePuristPreset);
-CONFIG.Investigator?.installPreset(`${key}-pulp`, trail2ePulpPreset);
+CONFIG.Investigator?.installTheme(moduleId, toc2eQuickstartThemeSeed);
+CONFIG.Investigator?.installPreset(`${moduleId}-purist`, trail2ePuristPreset);
+CONFIG.Investigator?.installPreset(`${moduleId}-pulp`, trail2ePulpPreset);
 
 // HMR for themes
 // we can only trigger HMR from the module that directly imports the module
@@ -40,10 +40,10 @@ if (import.meta.hot) {
           if (newModule) {
             // const themeName = themeNames[i];
             CONFIG.Investigator?.installTheme(
-              key,
+              moduleId,
               newModule["trail2eThemeSeed"],
             );
-            Hooks.call("investigator:themeHMR", key);
+            Hooks.call("investigator:themeHMR", moduleId);
           }
         });
       },

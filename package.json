@@ -1,6 +1,6 @@
 {
-  "name": "trail-of-cthulhu-2e-fvtt",
-  "version": "1.0.0-alpha.5",
+  "name": "toc-2e-quickstart-fvtt",
+  "version": "1.0.0-alpha.1",
   "description": "",
   "main": "index.js",
   "type": "module",
