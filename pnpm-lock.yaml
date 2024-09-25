@@ -13,8 +13,8 @@ importers:
         version: link:packages/shared-fvtt-bit
     devDependencies:
       '@league-of-foundry-developers/foundry-vtt-types':
-        specifier: ^9.280.0
-        version: 9.280.0(@pixi/constants@5.3.11)(@pixi/core@5.3.11)(@pixi/display@5.3.11)(@pixi/graphics@5.3.11)(@pixi/math@5.3.11)(@pixi/utils@5.3.11)
+        specifier: ^9.280.1
+        version: 9.280.1(@pixi/constants@5.3.11)(@pixi/core@5.3.11)(@pixi/display@5.3.11)(@pixi/graphics@5.3.11)(@pixi/math@5.3.11)(@pixi/utils@5.3.11)
       '@lumphammer/investigator-fvtt-types':
         specifier: ^1.12.1
         version: 1.13.2
@@ -551,9 +551,6 @@ packages:
   '@jridgewell/trace-mapping@0.3.25':
     resolution: {integrity: sha512-vNk6aEwybGtawWmy/PzwnGDOjCkLWSD2wqvjGGAgOAwCGWySYXfYoxt00IJkTF+8Lb57DwOb3Aa0o9CApepiYQ==}
 
-  '@league-of-foundry-developers/foundry-vtt-types@9.280.0':
-    resolution: {integrity: sha512-Dv8/+kgAnI2F5snSWcnMnZsgO/87AFyBruflluZkWDbP7Pm5qi32GlNYCDEg7HMKybzyKmgLV2qXMmYPHtCT7w==}
-
   '@league-of-foundry-developers/foundry-vtt-types@9.280.1':
     resolution: {integrity: sha512-o7+hUxUgCR0wlIQR+fdYYl/n+k/HYWPcqJhJpzm+p4YjMIivVrLf7XOut2wwFUDpUHvcJn85Nlj9dvf3PEQnHw==}
 
@@ -610,6 +607,7 @@ packages:
 
   '@pixi/graphics-smooth@0.0.22':
     resolution: {integrity: sha512-qq2u+BJBIDBuuSTc2Xzm1D/8RiiKBdxnVDiMb7Go5v8achnV5ctC6m+rf8Mq0sWm66mbOqu1aq/9efT4A4sPrA==}
+    engines: {node: '>=14', npm: '>=7'}
     peerDependencies:
       '@pixi/constants': ^6.0.4
       '@pixi/core': ^6.0.4
@@ -2909,27 +2907,6 @@ snapshots:
     dependencies:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.0
-
-  '@league-of-foundry-developers/foundry-vtt-types@9.280.0(@pixi/constants@5.3.11)(@pixi/core@5.3.11)(@pixi/display@5.3.11)(@pixi/graphics@5.3.11)(@pixi/math@5.3.11)(@pixi/utils@5.3.11)':
-    dependencies:
-      '@pixi/graphics-smooth': 0.0.22(@pixi/constants@5.3.11)(@pixi/core@5.3.11)(@pixi/display@5.3.11)(@pixi/graphics@5.3.11)(@pixi/math@5.3.11)(@pixi/utils@5.3.11)
-      '@types/jquery': 3.5.30
-      '@types/simple-peer': 9.11.8
-      handlebars: 4.7.7
-      pixi-particles: 4.3.1(pixi.js@5.3.11)
-      pixi.js: 5.3.11
-      socket.io-client: 4.3.2
-      tinymce: 5.10.1
-    transitivePeerDependencies:
-      - '@pixi/constants'
-      - '@pixi/core'
-      - '@pixi/display'
-      - '@pixi/graphics'
-      - '@pixi/math'
-      - '@pixi/utils'
-      - bufferutil
-      - supports-color
-      - utf-8-validate
 
   '@league-of-foundry-developers/foundry-vtt-types@9.280.1(@pixi/constants@5.3.11)(@pixi/core@5.3.11)(@pixi/display@5.3.11)(@pixi/graphics@5.3.11)(@pixi/math@5.3.11)(@pixi/utils@5.3.11)':
     dependencies:
