@@ -1,6 +1,6 @@
 {
   "id": "toc-2e-quickstart",
-  "title": "Trail of Cthulhu 2nd Edition Quickstart",
+  "title": "Trail of Cthulhu 2e Quickstart",
   "description": "Quickstart text, pregenerated PCs, and a few other things",
   "version": "1.0.0-alpha.1",
   "authors": [{ "name": "Neil de Carteret" }],
@@ -30,6 +30,12 @@
       "type": "Item"
     },
     {
+      "name": "gmc-abilities",
+      "label": "Quickstart GMC Abilities",
+      "system": "investigator",
+      "type": "Item"
+    },
+    {
       "name": "quickstart-book",
       "label": "Quickstart Book",
       "system": "investigator",
@@ -40,6 +46,12 @@
       "label": "Pregenerated Characters",
       "system": "investigator",
       "type": "Actor"
+    },
+    {
+      "name": "gmcs",
+      "label": "GMCs",
+      "system": "investigator",
+      "type": "Actor"
     }
   ],
   "packFolders": [
@@ -47,9 +59,11 @@
       "name": "Trail of Cthulhu 2e Quickstart",
       "sorting": "m",
       "packs": [
-        "trail-of-cthulhu-2e-pc-abilities",
-        "trail-of-cthulhu-2e-pulp-pc-abilities",
-        "trail-of-cthulhu-2e-purist-pc-abilities"
+        "pc-abilities",
+        "gmc-abilities",
+        "quickstart-book",
+        "pregens",
+        "gmcs"
       ],
       "color": "#2c87a4"
     }
