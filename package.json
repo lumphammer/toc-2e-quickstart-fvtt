@@ -10,14 +10,15 @@
     "build": "vite build",
     "package": "vite build && ./tasks.ts packidge",
     "link": "./tasks.ts link",
-    "unlink": "tasks.ts unlink",
+    "unlink": "./tasks.ts unlink",
     "format:check": "prettier --check src",
     "format:fix": "prettier --write src",
     "lint": "eslint src",
     "lint:check": "eslint src",
     "lint:fix": "eslint src --fix",
     "typecheck": "tsc --noEmit",
-    "do-release": "./packages/shared-fvtt-bits/scripts/do-release.sh"
+    "do-release": "./packages/shared-fvtt-bits/scripts/do-release.sh",
+    "copy-packs-back": "./tasks.ts copyPacksBack"
   },
   "keywords": [],
   "author": "",
