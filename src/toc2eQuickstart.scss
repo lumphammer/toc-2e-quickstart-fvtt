@@ -9,3 +9,19 @@
   // was 80%
   max-width: 100%;
 }
+
+.toc-2e-quickstart {
+  .journal-entry-pages {
+    // background: url(/modules/toc-2e-quickstart/assets/toc2eQuickstartTheme/ToC_character_sheet_background.webp);
+  }
+  .scrollable {
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    // background-position: center;
+  }
+  article {
+    background: url(/modules/toc-2e-quickstart/assets/toc2eQuickstartTheme/ToC_character_sheet_background.webp);
+    background-repeat: repeat;
+    padding: 1em;
+  }
+}
