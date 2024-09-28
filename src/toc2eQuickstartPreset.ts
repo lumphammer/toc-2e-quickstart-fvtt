@@ -3,8 +3,8 @@ import { PresetV1 } from "@lumphammer/investigator-fvtt-types";
 import {
   moduleId,
   themeName,
-  trailOfCthulhu2ePCAbilityPackName,
-  trailOfCthulhu2ePuristPCAbilityPackName,
+  toc2eQuickstartNPCAbilityPackName,
+  toc2eQuickstartPCAbilityPackName,
 } from "./constants";
 
 export const toc2eQuickstartPreset: PresetV1 = {
@@ -22,11 +22,8 @@ export const toc2eQuickstartPreset: PresetV1 = {
     "Pillars of Sanity",
     "Sources of Stability",
   ],
-  newPCPacks: [
-    `${moduleId}.${trailOfCthulhu2ePCAbilityPackName}`,
-    `${moduleId}.${trailOfCthulhu2ePuristPCAbilityPackName}`,
-  ],
-  newNPCPacks: ["investigator.opponentAbilities"],
+  newPCPacks: [`${moduleId}.${toc2eQuickstartPCAbilityPackName}`],
+  newNPCPacks: [toc2eQuickstartNPCAbilityPackName],
   useBoost: false,
   useMwStyleAbilities: false,
   mwUseAlternativeItemTypes: false,
