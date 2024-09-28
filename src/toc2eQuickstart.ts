@@ -1,7 +1,7 @@
 import { moduleId, moduleTitle, themeName } from "./constants";
 import processedStyles from "./toc2eQuickstart.scss?inline";
-import { toc2eQuickstartThemeSeed } from "./toc2eQuickstartTheme";
 import { toc2eQuickstartPreset } from "./toc2eQuickstartPreset";
+import { toc2eQuickstartThemeSeed } from "./toc2eQuickstartTheme";
 
 // const key = "trail-of-cthulhu-2e";
 console.log(`[${moduleTitle}] initializing`);
@@ -23,28 +23,31 @@ CONFIG.Investigator?.installPreset(`${moduleId}`, toc2eQuickstartPreset);
 // runtime config and then call a (Foundry) hook to notify the (React) useTheme
 // hook about the change.
 if (import.meta.hot) {
-  // const themeNames = Object.keys(baseThemes);
-
-  if (import.meta.hot) {
-    import.meta.hot.accept(
-      ["toc2eQuickstartTheme.tsx"],
-      // keep this list in sync with the exports above.
-      // unfortunately the HMR API is staticaly analysed so we can't do anything
-      // clever - this *must* be a string literal array in the source code.
-      // also this comment should be above the list, but doing so breaks said
-      // static analysis.
-      (newModules) => {
-        newModules.forEach((newModule, i) => {
-          if (newModule) {
-            // const themeName = themeNames[i];
-            CONFIG.Investigator?.installTheme(
-              moduleId,
-              newModule["toc2eQuickstartThemeSeed"],
-            );
-            Hooks.call("investigator:themeHMR", moduleId);
-          }
-        });
-      },
-    );
-  }
+  import.meta.hot.accept(
+    ["toc2eQuickstartTheme.tsx"],
+    // keep this list in sync with the exports above.
+    // unfortunately the HMR API is staticaly analysed so we can't do anything
+    // clever - this *must* be a string literal array in the source code.
+    // also this comment should be above the list, but doing so breaks said
+    // static analysis.
+    (newModules) => {
+      newModules.forEach((newModule, i) => {
+        if (newModule) {
+          CONFIG.Investigator?.installTheme(
+            moduleId,
+            newModule["toc2eQuickstartThemeSeed"],
+          );
+          Hooks.call("investigator:themeHMR", moduleId);
+        }
+      });
+    },
+  );
+  import.meta.hot.accept(["./toc2eQuickstart.scss?inline"], (newModules) => {
+    newModules.forEach((newModule, i) => {
+      if (newModule) {
+        // @ts-expect-error - we know it's a string
+        styleElement.innerHTML = newModule.default;
+      }
+    });
+  });
 }
