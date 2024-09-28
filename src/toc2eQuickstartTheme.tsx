@@ -3,14 +3,14 @@ import { SeedColorsV1, ThemeSeedV1 } from "@lumphammer/investigator-fvtt-types";
 import { averiaLibre, moduleId } from "./constants";
 
 const colors: SeedColorsV1 = {
-  accent: "#a8821a",
+  accent: "#906f16",
   accentContrast: "#fff",
   glow: "#ecd597",
   wallpaper: "#f2f1ef",
   backgroundPrimary: "#ffffff99",
   backgroundSecondary: "#f2f1efdd",
   backgroundButton: "#90752c44",
-  text: "#333",
+  text: "#585247",
   controlBorder: "#666",
   danger: "#b03",
 };
@@ -35,11 +35,10 @@ export const toc2eQuickstartThemeSeed: ThemeSeedV1 = {
   logo: {
     fontScaleFactor: 20,
     frontTextElementStyle: {
-      // background: metalGradient,
       background: `linear-gradient(
         to bottom right,
         #77823d 0%,
-        #e2e773 50%,
+        #e2e773 75%,
         #fffde6 100%
         )`,
       backgroundClip: "text",
@@ -76,9 +75,9 @@ export const toc2eQuickstartThemeSeed: ThemeSeedV1 = {
   tabContentStyle: {
     backgroundColor: colors.backgroundPrimary,
     // backdropFilter: "blur(20px)",
-    borderStyle: "none double double double",
+    borderStyle: "none solid solid solid",
     borderColor,
-    borderWidth: "3px",
+    borderWidth: "2px",
     color: colors.text,
   },
   tabStyle: {
@@ -87,9 +86,20 @@ export const toc2eQuickstartThemeSeed: ThemeSeedV1 = {
     flex: "1",
     textAlign: "center",
     fontSize: "1.5em",
-    borderStyle: "double",
+    borderStyle: "double solid solid solid ",
     borderColor,
-    borderWidth: "3px",
+    borderWidth: "3px 2px 2px 2px",
+    background: `
+      linear-gradient(
+        0deg,
+        #968d7b44 0%,
+        ${colors.backgroundPrimary} 100%,
+        ${colors.backgroundPrimary} 100%
+      )
+    `,
+  },
+  tabActiveStyle: {
+    borderStyle: "double solid none solid",
     background: `
       linear-gradient(
         0deg,
@@ -98,14 +108,11 @@ export const toc2eQuickstartThemeSeed: ThemeSeedV1 = {
       )
     `,
   },
-  tabActiveStyle: {
-    borderStyle: "double double none double",
-  },
   tabSpacerStyle: {
-    borderStyle: "none none double none",
+    borderStyle: "none none solid none",
     width: "0.5rem",
     borderColor,
-    borderWidth: "3px",
+    borderWidth: "2px",
   },
   // panelStyleSecondary: {
   //   backgroundColor: colors.backgroundSecondary,
