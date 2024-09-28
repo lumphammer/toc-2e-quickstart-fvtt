@@ -2,14 +2,15 @@ import { PresetV1 } from "@lumphammer/investigator-fvtt-types";
 
 import {
   moduleId,
+  themeName,
   trailOfCthulhu2ePCAbilityPackName,
   trailOfCthulhu2ePuristPCAbilityPackName,
 } from "./constants";
 
-export const trail2ePuristPreset: PresetV1 = {
+export const toc2eQuickstartPreset: PresetV1 = {
   schemaVersion: "v1",
-  displayName: "Trail of Cthulhu 2e (Purist)",
-  defaultThemeName: "trail-of-cthulhu-2e",
+  displayName: "Trail of Cthulhu 2e (Quickstart)",
+  defaultThemeName: themeName,
   investigativeAbilityCategories: ["Academic", "Interpersonal", "Technical"],
   generalAbilityCategories: ["General"],
   combatAbilities: ["Scuffling", "Weapons", "Firearms", "Athletics"],

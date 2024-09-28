@@ -1,8 +1,7 @@
-import { moduleId, moduleTitle } from "./constants";
+import { moduleId, moduleTitle, themeName } from "./constants";
 import processedStyles from "./toc2eQuickstart.scss?inline";
-import { toc2eQuickstartThemeSeed } from "./toc2eTheme";
-import { trail2ePulpPreset } from "./trail2ePulpPreset";
-import { trail2ePuristPreset } from "./trail2ePuristPreset";
+import { toc2eQuickstartThemeSeed } from "./toc2eQuickstartTheme";
+import { toc2eQuickstartPreset } from "./toc2eQuickstartPreset";
 
 // const key = "trail-of-cthulhu-2e";
 console.log(`[${moduleTitle}] initializing`);
@@ -15,9 +14,8 @@ const styleElement = document.createElement("style");
 styleElement.innerHTML = processedStyles;
 document.head.appendChild(styleElement);
 
-CONFIG.Investigator?.installTheme(moduleId, toc2eQuickstartThemeSeed);
-CONFIG.Investigator?.installPreset(`${moduleId}-purist`, trail2ePuristPreset);
-CONFIG.Investigator?.installPreset(`${moduleId}-pulp`, trail2ePulpPreset);
+CONFIG.Investigator?.installTheme(themeName, toc2eQuickstartThemeSeed);
+CONFIG.Investigator?.installPreset(`${moduleId}`, toc2eQuickstartPreset);
 
 // HMR for themes
 // we can only trigger HMR from the module that directly imports the module
@@ -29,7 +27,7 @@ if (import.meta.hot) {
 
   if (import.meta.hot) {
     import.meta.hot.accept(
-      ["trail2eTheme.tsx"],
+      ["toc2eQuickstartTheme.tsx"],
       // keep this list in sync with the exports above.
       // unfortunately the HMR API is staticaly analysed so we can't do anything
       // clever - this *must* be a string literal array in the source code.
@@ -41,7 +39,7 @@ if (import.meta.hot) {
             // const themeName = themeNames[i];
             CONFIG.Investigator?.installTheme(
               moduleId,
-              newModule["trail2eThemeSeed"],
+              newModule["toc2eQuickstartThemeSeed"],
             );
             Hooks.call("investigator:themeHMR", moduleId);
           }
