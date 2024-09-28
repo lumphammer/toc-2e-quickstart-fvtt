@@ -1,5 +1,5 @@
-2024/09/25-19:14:36.795063 7ff84f7fe640 Delete type=3 #1
-2024/09/25-19:17:00.411732 7ff34dbff640 Level-0 table #5: started
-2024/09/25-19:17:00.411755 7ff34dbff640 Level-0 table #5: 0 bytes OK
-2024/09/25-19:17:00.414036 7ff34dbff640 Delete type=0 #3
-2024/09/25-19:17:00.414202 7ff34dbff640 Manual compaction at level-0 from 'undefined' @ 72057594037927935 : 1 .. 'undefined' @ 0 : 0; will stop at (end)
+2024/09/28-14:39:55.278575 7f1d197be640 Delete type=3 #1
+2024/09/28-19:49:43.884511 7f1d0b7fe640 Level-0 table #17: started
+2024/09/28-19:49:43.884757 7f1d0b7fe640 Level-0 table #17: 0 bytes OK
+2024/09/28-19:49:43.887657 7f1d0b7fe640 Delete type=0 #15
+2024/09/28-19:49:43.893957 7f1d0b7fe640 Manual compaction at level-0 from 'undefined' @ 72057594037927935 : 1 .. 'undefined' @ 0 : 0; will stop at (end)

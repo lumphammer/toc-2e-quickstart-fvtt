@@ -1,0 +1,3 @@
+2024/09/28-14:39:55.282296 7f1d0bfff640 Log #12: 0 ops saved to Table #13 OK
+2024/09/28-14:39:55.282471 7f1d0bfff640 Archiving /home/ndc/foundrydata/v12/Data/modules/toc-2e-quickstart/packs/gmcs/000012.log: OK
+2024/09/28-14:39:55.284965 7f1d0bfff640 **** Repaired leveldb /home/ndc/foundrydata/v12/Data/modules/toc-2e-quickstart/packs/gmcs; recovered 0 files; 0 bytes. Some data may have been lost. ****

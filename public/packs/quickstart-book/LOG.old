@@ -1,0 +1,4 @@
+2024/09/28-14:39:55.186993 7f1d18fbd640 Log #12: 0 ops saved to Table #15 OK
+2024/09/28-14:39:55.187152 7f1d18fbd640 Archiving /home/ndc/foundrydata/v12/Data/modules/toc-2e-quickstart/packs/quickstart-book/000012.log: OK
+2024/09/28-14:39:55.187184 7f1d18fbd640 Table #14: 1 entries OK
+2024/09/28-14:39:55.189398 7f1d18fbd640 **** Repaired leveldb /home/ndc/foundrydata/v12/Data/modules/toc-2e-quickstart/packs/quickstart-book; recovered 1 files; 539 bytes. Some data may have been lost. ****
