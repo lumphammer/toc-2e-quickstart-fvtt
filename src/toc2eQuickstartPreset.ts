@@ -39,6 +39,18 @@ export const toc2eQuickstartPreset: PresetV1 = {
       name: "Hit threshold",
       default: 3,
     },
+    creditRating: {
+      name: "Credit rating",
+      default: 0,
+    },
+    cthulhuMythosPotential: {
+      name: "Cthulhu Mythos Potential",
+      default: 0,
+    },
+    magicPotential: {
+      name: "Magic Potential",
+      default: 0,
+    },
   },
   npcStats: {
     hitThreshold: {

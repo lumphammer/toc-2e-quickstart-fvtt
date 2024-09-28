@@ -7,9 +7,9 @@ const colors: SeedColorsV1 = {
   accentContrast: "#fff",
   glow: "#ecd597",
   wallpaper: "#f2f1ef",
-  backgroundPrimary: "#ffffff99",
+  backgroundPrimary: "#ffffffcc",
   backgroundSecondary: "#f2f1efdd",
-  backgroundButton: "#90752c44",
+  backgroundButton: "#90752c22",
   text: "#585247",
   controlBorder: "#666",
   danger: "#b03",
@@ -53,35 +53,31 @@ export const toc2eQuickstartThemeSeed: ThemeSeedV1 = {
       transform: " rotateZ(-1deg)",
     },
     backdropStyle: {
-      perspective: "500px",
-      perspectiveOrigin: "50% 50%",
-      // backgroundImage:
-      //   "radial-gradient(closest-side, #ac4d4377 0%, #ac4d4300 100%)",
-      // mixBlendMode: "overlay",
+      // perspective: "500px",
+      // perspectiveOrigin: "50% 50%",
     },
   },
   panelStylePrimary: {
-    backgroundColor: "#fff3",
+    backgroundColor: colors.backgroundPrimary,
     borderStyle: "double",
     borderColor,
     borderWidth: "3px",
   },
   panelStyleSecondary: {
-    backgroundColor: "#fff3",
+    backgroundColor: colors.backgroundPrimary,
     borderStyle: "solid",
     borderColor,
     borderWidth: "1px",
   },
   tabContentStyle: {
     backgroundColor: colors.backgroundPrimary,
-    // backdropFilter: "blur(20px)",
     borderStyle: "none solid solid solid",
     borderColor,
     borderWidth: "2px",
     color: colors.text,
   },
   tabStyle: {
-    padding: "0.3em 0",
+    padding: "0.2rem 0",
     color: colors.accent,
     flex: "1",
     textAlign: "center",
@@ -97,8 +93,11 @@ export const toc2eQuickstartThemeSeed: ThemeSeedV1 = {
         ${colors.backgroundPrimary} 100%
       )
     `,
+    marginTop: "0.3rem",
   },
   tabActiveStyle: {
+    marginTop: "0",
+    color: colors.text,
     borderStyle: "double solid none solid",
     background: `
       linear-gradient(
