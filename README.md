@@ -12,6 +12,8 @@ Includes:
 * A new character sheet theme to match the art style of the Trail of Cthulhu 2nd Edition book.
 
 
-## Acknowledgements
+## Copyright
+
+© 2024 Pelgrane Press Ltd. All Rights Reserved. Published by arrangement with Chaosium, Inc. Trail of Cthulhu is a trademark of Pelgrane Press Ltd. Pelgrane Press Ltd. is owned by Simon Rogers and Cathriona Tobin.
 
 [Engebrechtre](https://www.dafont.com/engebrechtre.font?text=Trail+of+Cthulhu&psize=l#null) by [Typodermic Fonts](https://typodermicfonts.com/), licensed under [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
