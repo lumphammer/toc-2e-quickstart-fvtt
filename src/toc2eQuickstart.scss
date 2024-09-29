@@ -1,4 +1,6 @@
 @import url("../public/assets/toc2eQuickstartTheme/Engebrechtre/stylesheet.css");
+@import url("../public/assets/toc2eQuickstartTheme/AveriaSerif/stylesheet.css");
+@import url("../public/assets/toc2eQuickstartTheme/DustismoRoman/stylesheet.css");
 
 // foundry's default styles mean our compendium pack names get cut off
 .compendium-sidebar
@@ -11,6 +13,51 @@
 }
 
 .toc-2e-quickstart {
+  --dark: #695502;
+  --medium: #957612;
+  --light: #cfa225;
+  --pale: #f6e8c8;
+  --text: #2c2e35;
+  --wallpaper: #f2f1ef;
+  --wallpaper-transparent: #f2f1ef77;
+
+  font-family: "Averia Serif", serif;
+  color: #2c2e35;
+
+  h1 {
+    font-family: "Dustismo Roman", serif;
+    text-align: center;
+    border: 5px double var(--medium);
+    font-size: 3rem;
+    padding: 0.5em 0;
+    margin-bottom: 2rem;
+    color: var(--dark);
+    // background: var(--pale);
+  }
+
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Engebrechtre", serif;
+    border: none;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  h3 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
   .journal-entry-pages {
     // background: url(/modules/toc-2e-quickstart/assets/toc2eQuickstartTheme/ToC_character_sheet_background.webp);
   }
@@ -19,9 +66,38 @@
     // background-repeat: no-repeat;
     // background-position: center;
   }
+
   article {
-    background: url(/modules/toc-2e-quickstart/assets/toc2eQuickstartTheme/ToC_character_sheet_background.webp);
+    background: linear-gradient(
+        to bottom,
+        var(--wallpaper-transparent) 0%,
+        var(--wallpaper-transparent) 100%
+      ),
+      url(/modules/toc-2e-quickstart/assets/toc2eQuickstartTheme/repeating-text-background.webp);
     background-repeat: repeat;
+    // background-size: cover;
     padding: 1em;
+    min-height: 100%;
+  }
+
+  blockquote {
+    border: none;
+    padding: 0;
+    margin: 0 0 1em 0;
+    font-family: "Engebrechtre", serif;
+    font-style: normal;
+    font-size: 1.5em;
+    margin-left: 0;
+  }
+
+  aside {
+    border: 5px double var(--light);
+    padding: 1em 2em;
+    background: var(--wallpaper);
+    margin: 2em;
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
   }
 }
