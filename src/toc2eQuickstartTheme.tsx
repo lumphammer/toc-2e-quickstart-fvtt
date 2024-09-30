@@ -1,6 +1,6 @@
 import { SeedColorsV1, ThemeSeedV1 } from "@lumphammer/investigator-fvtt-types";
 
-import { averiaLibre, moduleId } from "./constants";
+import { moduleId } from "./constants";
 
 const colors: SeedColorsV1 = {
   accent: "#906f16",
@@ -23,14 +23,12 @@ export const toc2eQuickstartThemeSeed: ThemeSeedV1 = {
   schemaVersion: "v1",
   displayName: "Trail of Cthulhu Quickstart",
   global: `
-    @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
-    ${averiaLibre.importStatement}
   `,
   largeSheetRootStyle: {
     backgroundImage: wallpaperImage,
   },
   smallSheetRootStyle: {},
-  bodyFont: averiaLibre.fontFamily,
+  bodyFont: "16px 'Averia Serif Libre', serif",
   displayFont: "normal normal 1em 'Engebrechtre', serif",
   logo: {
     fontScaleFactor: 20,

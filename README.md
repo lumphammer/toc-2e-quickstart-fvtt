@@ -16,4 +16,11 @@ Includes:
 
 © 2024 Pelgrane Press Ltd. All Rights Reserved. Published by arrangement with Chaosium, Inc. Trail of Cthulhu is a trademark of Pelgrane Press Ltd. Pelgrane Press Ltd. is owned by Simon Rogers and Cathriona Tobin.
 
-[Engebrechtre](https://www.dafont.com/engebrechtre.font?text=Trail+of+Cthulhu&psize=l#null) by [Typodermic Fonts](https://typodermicfonts.com/), licensed under [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
+[Engebrechtre](https://www.dafont.com/engebrechtre.font?text=Trail+of+Cthulhu&psize=l#null) by [Typodermic Fonts](https://typodermicfonts.com/), licensed under [CC0][cc0].
+
+[Averia Serif Libre](https://fonts.google.com/specimen/Averia+Serif+Libre?preview.text=Trail%20of%20Cthulhu&query=averia) by [Dan Sayers](http://iotic.com/averia/), licensed under [OFL][ofl].
+
+[Dustismo Roman](https://www.dafont.com/dustismo-roman.font?text=Trail+of+Cthulhu) by Cheapskate Fonts, licensed under [OFL][ofl].
+
+[ofl]: https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL
+[cc0]: https://creativecommons.org/publicdomain/zero/1.0/
