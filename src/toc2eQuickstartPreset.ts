@@ -3,7 +3,7 @@ import { PresetV1 } from "@lumphammer/investigator-fvtt-types";
 import {
   moduleId,
   themeName,
-  toc2eQuickstartNPCAbilityPackName,
+  toc2eQuickstartGMCAbilityPackName,
   toc2eQuickstartPCAbilityPackName,
 } from "./constants";
 
@@ -23,7 +23,7 @@ export const toc2eQuickstartPreset: PresetV1 = {
     "Sources of Stability",
   ],
   newPCPacks: [`${moduleId}.${toc2eQuickstartPCAbilityPackName}`],
-  newNPCPacks: [toc2eQuickstartNPCAbilityPackName],
+  newNPCPacks: [`${moduleId}.${toc2eQuickstartGMCAbilityPackName}`],
   useBoost: false,
   useMwStyleAbilities: false,
   mwUseAlternativeItemTypes: false,
@@ -59,11 +59,11 @@ export const toc2eQuickstartPreset: PresetV1 = {
       default: 0,
     },
     alertness: {
-      name: "Alertness",
+      name: "Alertness Modifier",
       default: 0,
     },
     stealth: {
-      name: "Stealth",
+      name: "Stealth Modifier",
       default: 0,
     },
     stabilityLoss: {

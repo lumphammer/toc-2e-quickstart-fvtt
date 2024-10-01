@@ -11,7 +11,5 @@ export const moduleTitle = moduleManifest.title;
 
 export const themeName = moduleId;
 
-export const toc2eQuickstartPCAbilityPackName =
-  "trail-of-cthulhu-2e-pc-abilities";
-export const toc2eQuickstartNPCAbilityPackName =
-  "trail-of-cthulhu-2e-pulp-pc-abilities";
+export const toc2eQuickstartPCAbilityPackName = "pc-abilities";
+export const toc2eQuickstartGMCAbilityPackName = "gmc-abilities";
