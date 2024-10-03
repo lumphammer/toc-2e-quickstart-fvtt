@@ -1,11 +1,4 @@
-2024/10/03-12:08:23.531151 7f8f66ffd640 Delete type=3 #1
-2024/10/03-12:22:49.585786 7f8a667ef640 Level-0 table #61: started
-2024/10/03-12:22:49.585964 7f8a667ef640 Level-0 table #61: 0 bytes OK
-2024/10/03-12:22:49.588417 7f8a667ef640 Delete type=0 #59
-2024/10/03-12:22:49.598999 7f8a667ef640 Manual compaction at level-0 from '!actors!LDZ7EpQA2C5BAti4' @ 72057594037927935 : 1 .. '!actors.items!pzCS9hTzz6oFmx0f.zkTt91jNTTtSJ0CF' @ 0 : 0; will stop at '!actors.items!pzCS9hTzz6oFmx0f.zkTt91jNTTtSJ0CF' @ 198 : 1
-2024/10/03-12:22:49.599006 7f8a667ef640 Compacting 1@0 + 0@1 files
-2024/10/03-12:22:49.665865 7f8a667ef640 Generated table #62@0: 390 keys, 132065 bytes
-2024/10/03-12:22:49.665897 7f8a667ef640 Compacted 1@0 + 0@1 files => 132065 bytes
-2024/10/03-12:22:49.668002 7f8a667ef640 compacted to: files[ 0 1 0 0 0 0 0 ]
-2024/10/03-12:22:49.668072 7f8a667ef640 Delete type=2 #56
-2024/10/03-12:22:49.676432 7f8a667ef640 Manual compaction at level-0 from '!actors.items!pzCS9hTzz6oFmx0f.zkTt91jNTTtSJ0CF' @ 198 : 1 .. '!actors.items!pzCS9hTzz6oFmx0f.zkTt91jNTTtSJ0CF' @ 0 : 0; will stop at (end)
+2024/10/03-16:03:38.086082 7f8f9ce32640 Log #69: 0 ops saved to Table #70 OK
+2024/10/03-16:03:38.086148 7f8f9ce32640 Archiving /home/ndc/foundrydata/v12/Data/modules/toc-2e-quickstart/packs/pregens/000069.log: OK
+2024/10/03-16:03:38.086412 7f8f9ce32640 Table #62: 390 entries OK
+2024/10/03-16:03:38.088957 7f8f9ce32640 **** Repaired leveldb /home/ndc/foundrydata/v12/Data/modules/toc-2e-quickstart/packs/pregens; recovered 1 files; 132065 bytes. Some data may have been lost. ****

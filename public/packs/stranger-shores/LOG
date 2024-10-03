@@ -1,15 +1,12 @@
-2024/10/03-15:56:45.352232 7f8f9ce32640 Recovering log #4
-2024/10/03-15:56:45.357799 7f8f9ce32640 Delete type=3 #2
-2024/10/03-15:56:45.357832 7f8f9ce32640 Delete type=0 #4
-2024/10/03-15:57:12.136384 7f8a667ef640 Level-0 table #9: started
-2024/10/03-15:57:12.139003 7f8a667ef640 Level-0 table #9: 86234 bytes OK
-2024/10/03-15:57:12.141013 7f8a667ef640 Delete type=0 #7
-2024/10/03-15:57:12.141216 7f8a667ef640 Manual compaction at level-0 from '!adventures!iI5qMgsPPkMtl2TT' @ 72057594037927935 : 1 .. '!adventures!iI5qMgsPPkMtl2TT' @ 0 : 0; will stop at (end)
-2024/10/03-15:57:12.141282 7f8a667ef640 Manual compaction at level-1 from '!adventures!iI5qMgsPPkMtl2TT' @ 72057594037927935 : 1 .. '!adventures!iI5qMgsPPkMtl2TT' @ 0 : 0; will stop at '!adventures!iI5qMgsPPkMtl2TT' @ 3 : 1
-2024/10/03-15:57:12.141287 7f8a667ef640 Compacting 1@1 + 1@2 files
-2024/10/03-15:57:12.144532 7f8a667ef640 Generated table #10@1: 1 keys, 86234 bytes
-2024/10/03-15:57:12.144553 7f8a667ef640 Compacted 1@1 + 1@2 files => 86234 bytes
-2024/10/03-15:57:12.146854 7f8a667ef640 compacted to: files[ 0 0 1 0 0 0 0 ]
-2024/10/03-15:57:12.146908 7f8a667ef640 Delete type=2 #5
-2024/10/03-15:57:12.146974 7f8a667ef640 Delete type=2 #9
-2024/10/03-15:57:12.153862 7f8a667ef640 Manual compaction at level-1 from '!adventures!iI5qMgsPPkMtl2TT' @ 3 : 1 .. '!adventures!iI5qMgsPPkMtl2TT' @ 0 : 0; will stop at (end)
+2024/10/03-16:03:38.182876 7f8f67fff640 Delete type=3 #1
+2024/10/03-16:06:26.194285 7f8a667ef640 Level-0 table #18: started
+2024/10/03-16:06:26.197958 7f8a667ef640 Level-0 table #18: 86309 bytes OK
+2024/10/03-16:06:26.200630 7f8a667ef640 Delete type=0 #16
+2024/10/03-16:06:26.215606 7f8a667ef640 Manual compaction at level-0 from '!adventures!iI5qMgsPPkMtl2TT' @ 72057594037927935 : 1 .. '!adventures!iI5qMgsPPkMtl2TT' @ 0 : 0; will stop at '!adventures!iI5qMgsPPkMtl2TT' @ 3 : 1
+2024/10/03-16:06:26.215622 7f8a667ef640 Compacting 2@0 + 0@1 files
+2024/10/03-16:06:26.219102 7f8a667ef640 Generated table #19@0: 1 keys, 86309 bytes
+2024/10/03-16:06:26.219140 7f8a667ef640 Compacted 2@0 + 0@1 files => 86309 bytes
+2024/10/03-16:06:26.221818 7f8a667ef640 compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/10/03-16:06:26.221917 7f8a667ef640 Delete type=2 #10
+2024/10/03-16:06:26.222011 7f8a667ef640 Delete type=2 #18
+2024/10/03-16:06:26.222163 7f8a667ef640 Manual compaction at level-0 from '!adventures!iI5qMgsPPkMtl2TT' @ 3 : 1 .. '!adventures!iI5qMgsPPkMtl2TT' @ 0 : 0; will stop at (end)
