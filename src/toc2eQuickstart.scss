@@ -18,7 +18,7 @@
   --light: #cfa225;
   --pale: #f6e8c8;
   --text: #2c2e35;
-  --wallpaper: #f2f1ef;
+  --wallpaper: #f9f8f8; // #f9f8f8
   --wallpaper-transparent: #f2f1ef77;
 
   font-family: "Averia Serif Libre", serif;
@@ -74,8 +74,9 @@
         var(--wallpaper-transparent) 0%,
         var(--wallpaper-transparent) 100%
       ),
-      url(/modules/toc-2e-quickstart/assets/toc2eQuickstartTheme/repeating-text-background.webp);
-    background-repeat: repeat;
+      url(/modules/toc-2e-quickstart/assets/toc2eQuickstartTheme/repeating-text-background.webp),
+      linear-gradient(to bottom, var(--wallpaper) 0%, var(--wallpaper) 100%);
+    background-repeat: repeat-y;
     // background-size: cover;
     padding: 3em 3em;
     min-height: 100%;
@@ -100,5 +101,19 @@
       font-size: 1.5rem;
       margin-bottom: 0.5rem;
     }
+  }
+
+  .credits {
+    font-family: "Covington Cond", sans-serif;
+    font-size: 1.7em;
+  }
+
+  .copyright {
+    margin-top: 10em;
+    font-size: 0.9em;
+  }
+
+  li {
+    margin-bottom: 1em;
   }
 }
