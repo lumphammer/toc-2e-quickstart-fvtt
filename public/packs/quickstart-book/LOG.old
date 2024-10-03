@@ -1,4 +1,11 @@
-2024/10/03-12:08:23.441335 7f8f9ce32640 Log #60: 0 ops saved to Table #63 OK
-2024/10/03-12:08:23.441394 7f8f9ce32640 Archiving /home/ndc/foundrydata/v12/Data/modules/toc-2e-quickstart/packs/quickstart-book/000060.log: OK
-2024/10/03-12:08:23.441463 7f8f9ce32640 Table #62: 15 entries OK
-2024/10/03-12:08:23.444088 7f8f9ce32640 **** Repaired leveldb /home/ndc/foundrydata/v12/Data/modules/toc-2e-quickstart/packs/quickstart-book; recovered 1 files; 29329 bytes. Some data may have been lost. ****
+2024/10/03-12:08:23.517996 7f8f9ce32640 Delete type=3 #1
+2024/10/03-12:22:49.588464 7f8a667ef640 Level-0 table #67: started
+2024/10/03-12:22:49.588672 7f8a667ef640 Level-0 table #67: 0 bytes OK
+2024/10/03-12:22:49.591219 7f8a667ef640 Delete type=0 #65
+2024/10/03-12:22:49.668152 7f8a667ef640 Manual compaction at level-0 from '!journal!wJr3sB1cR4tyjQNH' @ 72057594037927935 : 1 .. '!journal.pages!wJr3sB1cR4tyjQNH.yMUOnSVfegPnV5pJ' @ 0 : 0; will stop at '!journal.pages!wJr3sB1cR4tyjQNH.yMUOnSVfegPnV5pJ' @ 159 : 1
+2024/10/03-12:22:49.668160 7f8a667ef640 Compacting 1@0 + 0@1 files
+2024/10/03-12:22:49.670167 7f8a667ef640 Generated table #68@0: 15 keys, 29329 bytes
+2024/10/03-12:22:49.670187 7f8a667ef640 Compacted 1@0 + 0@1 files => 29329 bytes
+2024/10/03-12:22:49.672152 7f8a667ef640 compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/10/03-12:22:49.672205 7f8a667ef640 Delete type=2 #62
+2024/10/03-12:22:49.676446 7f8a667ef640 Manual compaction at level-0 from '!journal.pages!wJr3sB1cR4tyjQNH.yMUOnSVfegPnV5pJ' @ 159 : 1 .. '!journal.pages!wJr3sB1cR4tyjQNH.yMUOnSVfegPnV5pJ' @ 0 : 0; will stop at (end)
