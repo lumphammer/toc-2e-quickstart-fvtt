@@ -52,6 +52,12 @@
       "label": "GMCs",
       "system": "investigator",
       "type": "Actor"
+    },
+    {
+      "name": "stranger-shores",
+      "label": "Stranger Shores",
+      "system": "investigator",
+      "type": "Adventure"
     }
   ],
   "packFolders": [
@@ -63,7 +69,8 @@
         "gmc-abilities",
         "quickstart-book",
         "pregens",
-        "gmcs"
+        "gmcs",
+        "stranger-shores"
       ],
       "color": "#2c87a4"
     }

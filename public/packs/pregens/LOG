@@ -1,11 +1,11 @@
-2024/10/03-11:00:30.360553 7f8f67fff640 Delete type=3 #1
-2024/10/03-11:22:57.134658 7f8a667ef640 Level-0 table #46: started
-2024/10/03-11:22:57.135434 7f8a667ef640 Level-0 table #46: 0 bytes OK
-2024/10/03-11:22:57.138297 7f8a667ef640 Delete type=0 #44
-2024/10/03-11:22:57.153123 7f8a667ef640 Manual compaction at level-0 from '!actors!LDZ7EpQA2C5BAti4' @ 72057594037927935 : 1 .. '!actors.items!pzCS9hTzz6oFmx0f.zkTt91jNTTtSJ0CF' @ 0 : 0; will stop at '!actors.items!pzCS9hTzz6oFmx0f.zkTt91jNTTtSJ0CF' @ 198 : 1
-2024/10/03-11:22:57.153145 7f8a667ef640 Compacting 1@0 + 0@1 files
-2024/10/03-11:22:57.156730 7f8a667ef640 Generated table #47@0: 390 keys, 132065 bytes
-2024/10/03-11:22:57.156757 7f8a667ef640 Compacted 1@0 + 0@1 files => 132065 bytes
-2024/10/03-11:22:57.159042 7f8a667ef640 compacted to: files[ 0 1 0 0 0 0 0 ]
-2024/10/03-11:22:57.159107 7f8a667ef640 Delete type=2 #41
-2024/10/03-11:22:57.159239 7f8a667ef640 Manual compaction at level-0 from '!actors.items!pzCS9hTzz6oFmx0f.zkTt91jNTTtSJ0CF' @ 198 : 1 .. '!actors.items!pzCS9hTzz6oFmx0f.zkTt91jNTTtSJ0CF' @ 0 : 0; will stop at (end)
+2024/10/03-12:08:23.531151 7f8f66ffd640 Delete type=3 #1
+2024/10/03-12:22:49.585786 7f8a667ef640 Level-0 table #61: started
+2024/10/03-12:22:49.585964 7f8a667ef640 Level-0 table #61: 0 bytes OK
+2024/10/03-12:22:49.588417 7f8a667ef640 Delete type=0 #59
+2024/10/03-12:22:49.598999 7f8a667ef640 Manual compaction at level-0 from '!actors!LDZ7EpQA2C5BAti4' @ 72057594037927935 : 1 .. '!actors.items!pzCS9hTzz6oFmx0f.zkTt91jNTTtSJ0CF' @ 0 : 0; will stop at '!actors.items!pzCS9hTzz6oFmx0f.zkTt91jNTTtSJ0CF' @ 198 : 1
+2024/10/03-12:22:49.599006 7f8a667ef640 Compacting 1@0 + 0@1 files
+2024/10/03-12:22:49.665865 7f8a667ef640 Generated table #62@0: 390 keys, 132065 bytes
+2024/10/03-12:22:49.665897 7f8a667ef640 Compacted 1@0 + 0@1 files => 132065 bytes
+2024/10/03-12:22:49.668002 7f8a667ef640 compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/10/03-12:22:49.668072 7f8a667ef640 Delete type=2 #56
+2024/10/03-12:22:49.676432 7f8a667ef640 Manual compaction at level-0 from '!actors.items!pzCS9hTzz6oFmx0f.zkTt91jNTTtSJ0CF' @ 198 : 1 .. '!actors.items!pzCS9hTzz6oFmx0f.zkTt91jNTTtSJ0CF' @ 0 : 0; will stop at (end)

@@ -1,4 +1,4 @@
-2024/10/03-11:00:30.364237 7f8f67fff640 Log #41: 0 ops saved to Table #44 OK
-2024/10/03-11:00:30.364266 7f8f67fff640 Archiving /home/ndc/foundrydata/v12/Data/modules/toc-2e-quickstart/packs/gmcs/000041.log: OK
-2024/10/03-11:00:30.364309 7f8f67fff640 Table #43: 30 entries OK
-2024/10/03-11:00:30.365868 7f8f67fff640 **** Repaired leveldb /home/ndc/foundrydata/v12/Data/modules/toc-2e-quickstart/packs/gmcs; recovered 1 files; 12809 bytes. Some data may have been lost. ****
+2024/10/03-12:08:23.535339 7f8f66ffd640 Log #56: 0 ops saved to Table #59 OK
+2024/10/03-12:08:23.535371 7f8f66ffd640 Archiving /home/ndc/foundrydata/v12/Data/modules/toc-2e-quickstart/packs/gmcs/000056.log: OK
+2024/10/03-12:08:23.535416 7f8f66ffd640 Table #58: 30 entries OK
+2024/10/03-12:08:23.537748 7f8f66ffd640 **** Repaired leveldb /home/ndc/foundrydata/v12/Data/modules/toc-2e-quickstart/packs/gmcs; recovered 1 files; 12809 bytes. Some data may have been lost. ****
