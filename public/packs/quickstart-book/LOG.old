@@ -1,4 +1,4 @@
-2024/09/28-14:39:55.186993 7f1d18fbd640 Log #12: 0 ops saved to Table #15 OK
-2024/09/28-14:39:55.187152 7f1d18fbd640 Archiving /home/ndc/foundrydata/v12/Data/modules/toc-2e-quickstart/packs/quickstart-book/000012.log: OK
-2024/09/28-14:39:55.187184 7f1d18fbd640 Table #14: 1 entries OK
-2024/09/28-14:39:55.189398 7f1d18fbd640 **** Repaired leveldb /home/ndc/foundrydata/v12/Data/modules/toc-2e-quickstart/packs/quickstart-book; recovered 1 files; 539 bytes. Some data may have been lost. ****
+2024/10/03-11:00:30.344580 7f8f677fe640 Log #45: 0 ops saved to Table #48 OK
+2024/10/03-11:00:30.344609 7f8f677fe640 Archiving /home/ndc/foundrydata/v12/Data/modules/toc-2e-quickstart/packs/quickstart-book/000045.log: OK
+2024/10/03-11:00:30.344663 7f8f677fe640 Table #47: 12 entries OK
+2024/10/03-11:00:30.346122 7f8f677fe640 **** Repaired leveldb /home/ndc/foundrydata/v12/Data/modules/toc-2e-quickstart/packs/quickstart-book; recovered 1 files; 26551 bytes. Some data may have been lost. ****

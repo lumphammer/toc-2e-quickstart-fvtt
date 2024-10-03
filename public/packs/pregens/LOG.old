@@ -1,3 +1,4 @@
-2024/09/28-14:39:55.269625 7f1d197be640 Log #12: 0 ops saved to Table #13 OK
-2024/09/28-14:39:55.269790 7f1d197be640 Archiving /home/ndc/foundrydata/v12/Data/modules/toc-2e-quickstart/packs/pregens/000012.log: OK
-2024/09/28-14:39:55.271950 7f1d197be640 **** Repaired leveldb /home/ndc/foundrydata/v12/Data/modules/toc-2e-quickstart/packs/pregens; recovered 0 files; 0 bytes. Some data may have been lost. ****
+2024/10/03-11:00:30.353187 7f8f67fff640 Log #39: 0 ops saved to Table #42 OK
+2024/10/03-11:00:30.353243 7f8f67fff640 Archiving /home/ndc/foundrydata/v12/Data/modules/toc-2e-quickstart/packs/pregens/000039.log: OK
+2024/10/03-11:00:30.353473 7f8f67fff640 Table #41: 390 entries OK
+2024/10/03-11:00:30.355251 7f8f67fff640 **** Repaired leveldb /home/ndc/foundrydata/v12/Data/modules/toc-2e-quickstart/packs/pregens; recovered 1 files; 132065 bytes. Some data may have been lost. ****
