@@ -74,5 +74,21 @@
       ],
       "color": "#2c87a4"
     }
+  ],
+  "url": "https://github.com/lumphammer/toc-2e-quickstart-fvtt",
+  "manifest": "https://github.com/lumphammer/toc-2e-quickstart-fvtt/releases/latest/download/system.json",
+  "download": "https://github.com/lumphammer/toc-2e-quickstart-fvtt/releases/latest/download/toc-2e-quickstart.zip",
+  "readme": "https://github.com/toc-2e-quickstart/blob/main/README.md",
+  "bugs": "https://github.com/toc-2e-quickstart/issues",
+  "changelog": "https://github.com/toc-2e-quickstart/blob/main/CHANGELOG.md",
+  "media": [
+    {
+      "type": "cover",
+      "url": "https://raw.githubusercontent.com/lumphammer/toc-2e-quickstart-fvtt/refs/heads/main/public/assets/TOC_2e%20Quickstart_cover.webp"
+    },
+    {
+      "type": "setup",
+      "url": "https://raw.githubusercontent.com/lumphammer/toc-2e-quickstart-fvtt/refs/heads/main/public/assets/TOC_2e%20Quickstart_cover.webp"
+    }
   ]
 }
