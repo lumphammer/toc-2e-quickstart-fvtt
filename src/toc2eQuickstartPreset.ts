@@ -61,14 +61,12 @@ export const toc2eQuickstartPreset: PresetV1 = {
     alertness: {
       name: "Alertness Modifier",
       default: 0,
+      min: -10,
     },
     stealth: {
       name: "Stealth Modifier",
       default: 0,
-    },
-    stabilityLoss: {
-      name: "Stability Loss",
-      default: 0,
+      min: -10,
     },
   },
   useNpcCombatBonuses: false,
