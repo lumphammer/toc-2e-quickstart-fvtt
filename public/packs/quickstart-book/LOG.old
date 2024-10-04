@@ -1,4 +1,0 @@
-2024/10/03-16:03:38.010523 7f8f677fe640 Log #75: 0 ops saved to Table #76 OK
-2024/10/03-16:03:38.010575 7f8f677fe640 Archiving /home/ndc/foundrydata/v12/Data/modules/toc-2e-quickstart/packs/quickstart-book/000075.log: OK
-2024/10/03-16:03:38.010665 7f8f677fe640 Table #68: 15 entries OK
-2024/10/03-16:03:38.012936 7f8f677fe640 **** Repaired leveldb /home/ndc/foundrydata/v12/Data/modules/toc-2e-quickstart/packs/quickstart-book; recovered 1 files; 29329 bytes. Some data may have been lost. ****

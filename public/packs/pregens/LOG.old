@@ -1,4 +1,0 @@
-2024/10/03-16:03:38.086082 7f8f9ce32640 Log #69: 0 ops saved to Table #70 OK
-2024/10/03-16:03:38.086148 7f8f9ce32640 Archiving /home/ndc/foundrydata/v12/Data/modules/toc-2e-quickstart/packs/pregens/000069.log: OK
-2024/10/03-16:03:38.086412 7f8f9ce32640 Table #62: 390 entries OK
-2024/10/03-16:03:38.088957 7f8f9ce32640 **** Repaired leveldb /home/ndc/foundrydata/v12/Data/modules/toc-2e-quickstart/packs/pregens; recovered 1 files; 132065 bytes. Some data may have been lost. ****

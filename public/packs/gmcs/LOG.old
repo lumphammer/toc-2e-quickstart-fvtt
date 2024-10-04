@@ -1,4 +1,0 @@
-2024/10/03-16:03:38.162773 7f8f9ce32640 Log #71: 0 ops saved to Table #72 OK
-2024/10/03-16:03:38.162821 7f8f9ce32640 Archiving /home/ndc/foundrydata/v12/Data/modules/toc-2e-quickstart/packs/gmcs/000071.log: OK
-2024/10/03-16:03:38.162863 7f8f9ce32640 Table #64: 30 entries OK
-2024/10/03-16:03:38.165085 7f8f9ce32640 **** Repaired leveldb /home/ndc/foundrydata/v12/Data/modules/toc-2e-quickstart/packs/gmcs; recovered 1 files; 12809 bytes. Some data may have been lost. ****

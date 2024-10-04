@@ -25,37 +25,19 @@
   "packs": [
     {
       "name": "pc-abilities",
-      "label": "Quickstart PC Abilities",
+      "label": "ToC 2e Quickstart PC Abilities",
       "system": "investigator",
       "type": "Item"
     },
     {
       "name": "gmc-abilities",
-      "label": "Quickstart GMC Abilities",
+      "label": "ToC 2e Quickstart GMC Abilities",
       "system": "investigator",
       "type": "Item"
     },
     {
-      "name": "quickstart-book",
-      "label": "Quickstart Book",
-      "system": "investigator",
-      "type": "JournalEntry"
-    },
-    {
-      "name": "pregens",
-      "label": "Pregenerated Characters",
-      "system": "investigator",
-      "type": "Actor"
-    },
-    {
-      "name": "gmcs",
-      "label": "GMCs",
-      "system": "investigator",
-      "type": "Actor"
-    },
-    {
       "name": "stranger-shores",
-      "label": "Stranger Shores Adventure",
+      "label": "Quickstart Adventure",
       "system": "investigator",
       "type": "Adventure"
     }
@@ -64,15 +46,16 @@
     {
       "name": "Trail of Cthulhu 2e Quickstart",
       "sorting": "m",
-      "packs": [
-        "pc-abilities",
-        "gmc-abilities",
-        "quickstart-book",
-        "pregens",
-        "gmcs",
-        "stranger-shores"
-      ],
-      "color": "#1f6d6b"
+      "packs": ["stranger-shores"],
+      "color": "#1f6d6b",
+      "folders": [
+        {
+          "name": "Ability Packs",
+          "sorting": "m",
+          "packs": ["pc-abilities", "gmc-abilities"],
+          "color": "#154847"
+        }
+      ]
     }
   ],
   "url": "https://github.com/lumphammer/toc-2e-quickstart-fvtt",
