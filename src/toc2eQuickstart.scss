@@ -93,6 +93,7 @@
     padding: 1em 2em;
     background: var(--wallpaper);
     margin: 2em;
+    box-shadow: 0 0 0.7em var(--light);
     h2 {
       font-size: 1.5rem;
       margin-bottom: 0.5rem;
@@ -111,5 +112,10 @@
 
   li {
     margin-bottom: 1em;
+  }
+
+  img {
+    border: 1px solid var(--text);
+    box-shadow: 0.2em 0.2em 1em var(--text);
   }
 }
