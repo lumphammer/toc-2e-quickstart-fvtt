@@ -1,4 +1,4 @@
-2024/10/05-10:48:09.724853 7f108e7bd640 Log #120: 0 ops saved to Table #121 OK
-2024/10/05-10:48:09.724904 7f108e7bd640 Archiving /home/ndc/foundrydata/v12/Data/modules/toc-2e-quickstart/packs/pc-abilities/000120.log: OK
-2024/10/05-10:48:09.724993 7f108e7bd640 Table #109: 62 entries OK
-2024/10/05-10:48:09.726864 7f108e7bd640 **** Repaired leveldb /home/ndc/foundrydata/v12/Data/modules/toc-2e-quickstart/packs/pc-abilities; recovered 1 files; 18431 bytes. Some data may have been lost. ****
+2024/10/05-15:22:53.785994 7f7d6173e640 Log #131: 0 ops saved to Table #132 OK
+2024/10/05-15:22:53.786264 7f7d6173e640 Archiving /home/ndc/foundrydata/v12/Data/modules/toc-2e-quickstart/packs/pc-abilities/000131.log: OK
+2024/10/05-15:22:53.786528 7f7d6173e640 Table #126: 62 entries OK
+2024/10/05-15:22:53.788386 7f7d6173e640 **** Repaired leveldb /home/ndc/foundrydata/v12/Data/modules/toc-2e-quickstart/packs/pc-abilities; recovered 1 files; 18431 bytes. Some data may have been lost. ****

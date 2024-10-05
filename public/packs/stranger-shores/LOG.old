@@ -1,4 +1,4 @@
-2024/10/05-10:48:09.744407 7f108f7bf640 Log #64: 0 ops saved to Table #65 OK
-2024/10/05-10:48:09.744441 7f108f7bf640 Archiving /home/ndc/foundrydata/v12/Data/modules/toc-2e-quickstart/packs/stranger-shores/000064.log: OK
-2024/10/05-10:48:09.745765 7f108f7bf640 Table #57: 1 entries OK
-2024/10/05-10:48:09.747725 7f108f7bf640 **** Repaired leveldb /home/ndc/foundrydata/v12/Data/modules/toc-2e-quickstart/packs/stranger-shores; recovered 1 files; 89121 bytes. Some data may have been lost. ****
+2024/10/05-15:22:53.805785 7f7d53fff640 Log #75: 0 ops saved to Table #78 OK
+2024/10/05-15:22:53.806015 7f7d53fff640 Archiving /home/ndc/foundrydata/v12/Data/modules/toc-2e-quickstart/packs/stranger-shores/000075.log: OK
+2024/10/05-15:22:53.806533 7f7d53fff640 Table #77: 1 entries OK
+2024/10/05-15:22:53.812410 7f7d53fff640 **** Repaired leveldb /home/ndc/foundrydata/v12/Data/modules/toc-2e-quickstart/packs/stranger-shores; recovered 1 files; 91346 bytes. Some data may have been lost. ****
