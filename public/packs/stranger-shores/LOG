@@ -1,14 +1,12 @@
-2024/10/04-17:54:24.875782 7f108f7bf640 Recovering log #50
-2024/10/04-17:54:24.880713 7f108f7bf640 Delete type=0 #50
-2024/10/04-17:54:24.880752 7f108f7bf640 Delete type=3 #48
-2024/10/04-17:57:01.011909 7f108d7bb640 Level-0 table #56: started
-2024/10/04-17:57:01.014329 7f108d7bb640 Level-0 table #56: 89121 bytes OK
-2024/10/04-17:57:01.016617 7f108d7bb640 Delete type=0 #54
-2024/10/04-17:57:01.022410 7f108d7bb640 Manual compaction at level-0 from '!adventures!iI5qMgsPPkMtl2TT' @ 72057594037927935 : 1 .. '!adventures!iI5qMgsPPkMtl2TT' @ 0 : 0; will stop at '!adventures!iI5qMgsPPkMtl2TT' @ 8 : 1
-2024/10/04-17:57:01.022433 7f108d7bb640 Compacting 1@0 + 1@1 files
-2024/10/04-17:57:01.025352 7f108d7bb640 Generated table #57@0: 1 keys, 89121 bytes
-2024/10/04-17:57:01.025385 7f108d7bb640 Compacted 1@0 + 1@1 files => 89121 bytes
-2024/10/04-17:57:01.027482 7f108d7bb640 compacted to: files[ 0 1 0 0 0 0 0 ]
-2024/10/04-17:57:01.027555 7f108d7bb640 Delete type=2 #56
-2024/10/04-17:57:01.027642 7f108d7bb640 Delete type=2 #52
-2024/10/04-17:57:01.032742 7f108d7bb640 Manual compaction at level-0 from '!adventures!iI5qMgsPPkMtl2TT' @ 8 : 1 .. '!adventures!iI5qMgsPPkMtl2TT' @ 0 : 0; will stop at (end)
+2024/10/05-10:48:09.753147 7f108f7bf640 Delete type=3 #1
+2024/10/05-10:49:13.349819 7f108d7bb640 Level-0 table #69: started
+2024/10/05-10:49:13.354906 7f108d7bb640 Level-0 table #69: 89139 bytes OK
+2024/10/05-10:49:13.357420 7f108d7bb640 Delete type=0 #67
+2024/10/05-10:49:13.366882 7f108d7bb640 Manual compaction at level-0 from '!adventures!iI5qMgsPPkMtl2TT' @ 72057594037927935 : 1 .. '!adventures!iI5qMgsPPkMtl2TT' @ 0 : 0; will stop at '!adventures!iI5qMgsPPkMtl2TT' @ 8 : 1
+2024/10/05-10:49:13.366904 7f108d7bb640 Compacting 2@0 + 0@1 files
+2024/10/05-10:49:13.370676 7f108d7bb640 Generated table #70@0: 1 keys, 89139 bytes
+2024/10/05-10:49:13.370704 7f108d7bb640 Compacted 2@0 + 0@1 files => 89139 bytes
+2024/10/05-10:49:13.372761 7f108d7bb640 compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/10/05-10:49:13.372832 7f108d7bb640 Delete type=2 #69
+2024/10/05-10:49:13.372899 7f108d7bb640 Delete type=2 #57
+2024/10/05-10:49:13.377374 7f108d7bb640 Manual compaction at level-0 from '!adventures!iI5qMgsPPkMtl2TT' @ 8 : 1 .. '!adventures!iI5qMgsPPkMtl2TT' @ 0 : 0; will stop at (end)

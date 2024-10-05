@@ -1,11 +1,4 @@
-2024/10/04-17:51:52.330228 7f108efbe640 Delete type=3 #1
-2024/10/04-17:53:53.121175 7f108d7bb640 Level-0 table #108: started
-2024/10/04-17:53:53.121645 7f108d7bb640 Level-0 table #108: 0 bytes OK
-2024/10/04-17:53:53.123805 7f108d7bb640 Delete type=0 #106
-2024/10/04-17:53:53.123902 7f108d7bb640 Manual compaction at level-0 from '!items!0WiCjt6vqvI7QWsN' @ 72057594037927935 : 1 .. '!items!ydsDU24pZ4UF3xbi' @ 0 : 0; will stop at '!items!ydsDU24pZ4UF3xbi' @ 19 : 1
-2024/10/04-17:53:53.123917 7f108d7bb640 Compacting 1@0 + 0@1 files
-2024/10/04-17:53:53.126039 7f108d7bb640 Generated table #109@0: 62 keys, 18431 bytes
-2024/10/04-17:53:53.126069 7f108d7bb640 Compacted 1@0 + 0@1 files => 18431 bytes
-2024/10/04-17:53:53.127958 7f108d7bb640 compacted to: files[ 0 1 0 0 0 0 0 ]
-2024/10/04-17:53:53.128032 7f108d7bb640 Delete type=2 #103
-2024/10/04-17:53:53.128333 7f108d7bb640 Manual compaction at level-0 from '!items!ydsDU24pZ4UF3xbi' @ 19 : 1 .. '!items!ydsDU24pZ4UF3xbi' @ 0 : 0; will stop at (end)
+2024/10/05-10:48:09.724853 7f108e7bd640 Log #120: 0 ops saved to Table #121 OK
+2024/10/05-10:48:09.724904 7f108e7bd640 Archiving /home/ndc/foundrydata/v12/Data/modules/toc-2e-quickstart/packs/pc-abilities/000120.log: OK
+2024/10/05-10:48:09.724993 7f108e7bd640 Table #109: 62 entries OK
+2024/10/05-10:48:09.726864 7f108e7bd640 **** Repaired leveldb /home/ndc/foundrydata/v12/Data/modules/toc-2e-quickstart/packs/pc-abilities; recovered 1 files; 18431 bytes. Some data may have been lost. ****

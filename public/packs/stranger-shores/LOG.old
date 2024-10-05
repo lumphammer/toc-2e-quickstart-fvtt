@@ -1,11 +1,4 @@
-2024/10/04-17:51:52.348506 7f108f7bf640 Delete type=3 #1
-2024/10/04-17:53:53.139204 7f108d7bb640 Level-0 table #51: started
-2024/10/04-17:53:53.139980 7f108d7bb640 Level-0 table #51: 0 bytes OK
-2024/10/04-17:53:53.142467 7f108d7bb640 Delete type=0 #49
-2024/10/04-17:53:53.142722 7f108d7bb640 Manual compaction at level-0 from '!adventures!iI5qMgsPPkMtl2TT' @ 72057594037927935 : 1 .. '!adventures!iI5qMgsPPkMtl2TT' @ 0 : 0; will stop at '!adventures!iI5qMgsPPkMtl2TT' @ 7 : 1
-2024/10/04-17:53:53.142802 7f108d7bb640 Compacting 1@0 + 0@1 files
-2024/10/04-17:53:53.146342 7f108d7bb640 Generated table #52@0: 1 keys, 89253 bytes
-2024/10/04-17:53:53.146368 7f108d7bb640 Compacted 1@0 + 0@1 files => 89253 bytes
-2024/10/04-17:53:53.148178 7f108d7bb640 compacted to: files[ 0 1 0 0 0 0 0 ]
-2024/10/04-17:53:53.148277 7f108d7bb640 Delete type=2 #46
-2024/10/04-17:53:53.148421 7f108d7bb640 Manual compaction at level-0 from '!adventures!iI5qMgsPPkMtl2TT' @ 7 : 1 .. '!adventures!iI5qMgsPPkMtl2TT' @ 0 : 0; will stop at (end)
+2024/10/05-10:48:09.744407 7f108f7bf640 Log #64: 0 ops saved to Table #65 OK
+2024/10/05-10:48:09.744441 7f108f7bf640 Archiving /home/ndc/foundrydata/v12/Data/modules/toc-2e-quickstart/packs/stranger-shores/000064.log: OK
+2024/10/05-10:48:09.745765 7f108f7bf640 Table #57: 1 entries OK
+2024/10/05-10:48:09.747725 7f108f7bf640 **** Repaired leveldb /home/ndc/foundrydata/v12/Data/modules/toc-2e-quickstart/packs/stranger-shores; recovered 1 files; 89121 bytes. Some data may have been lost. ****
