@@ -112,18 +112,18 @@ Hooks.on("renderAdventureImporter", (app: any, html: any, data: any) => {
   $(html).find(".adventure-footer").append(dontShowButton);
 });
 
-// Flip the setting when the adventure gets imported
+// When the adventure gets imported
 Hooks.on("importAdventure", (adventure: any) => {
   if (adventure._id !== "iI5qMgsPPkMtl2TT") {
     return;
   }
-  // XXX renable this
-  // void (game as Game).settings.set(
-  //   moduleId,
-  //   adventureImportSettingKey,
-  //   adventureImportImported,
-  // );
-  // apply the preset...
+  // flip the setting to say it's been imported
+  void (game as Game).settings.set(
+    moduleId,
+    adventureImportSettingKey,
+    adventureImportImported,
+  );
+  // Ask the GM if they want to apply the preset
   const d = new Dialog({
     title: "Apply preset?",
     content:
@@ -159,8 +159,6 @@ Hooks.on("importAdventure", (adventure: any) => {
     default: "ok",
   });
   d.render(true);
-
-  // void activatePreset();
 });
 
 /// ///////////////////////////////////////////////////////////////////////////
