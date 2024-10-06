@@ -1,3 +1,4 @@
+import { activatePreset } from "./activatePreset";
 import { moduleId, moduleTitle, themeName } from "./constants";
 import processedStyles from "./toc2eQuickstart.scss?inline";
 import { toc2eQuickstartPreset } from "./toc2eQuickstartPreset";
@@ -116,11 +117,50 @@ Hooks.on("importAdventure", (adventure: any) => {
   if (adventure._id !== "iI5qMgsPPkMtl2TT") {
     return;
   }
-  void (game as Game).settings.set(
-    moduleId,
-    adventureImportSettingKey,
-    adventureImportImported,
-  );
+  // XXX renable this
+  // void (game as Game).settings.set(
+  //   moduleId,
+  //   adventureImportSettingKey,
+  //   adventureImportImported,
+  // );
+  // apply the preset...
+  const d = new Dialog({
+    title: "Apply preset?",
+    content:
+      "<p>Configure your GUMSHOE System for <b>Trail of Cthulhu 2e Quickstart</b>?</p>",
+    buttons: {
+      ok: {
+        icon: '<i class="fas fa-check"></i>',
+        label: "Yes, set it up",
+        callback: () => {
+          void activatePreset();
+        },
+      },
+      cancel: {
+        icon: '<i class="fas fa-times"></i>',
+        label: "Cancel",
+        callback: () => {
+          setTimeout(() => {
+            const d = new Dialog({
+              title: "Preset not applied",
+              content:
+                "<p>You can find the preset in the <b>GUMSHOE System Settings</b> at any time.</p>",
+              buttons: {
+                ok: {
+                  label: "Okay",
+                },
+              },
+            });
+            d.render(true);
+          }, 500);
+        },
+      },
+    },
+    default: "ok",
+  });
+  d.render(true);
+
+  // void activatePreset();
 });
 
 /// ///////////////////////////////////////////////////////////////////////////
