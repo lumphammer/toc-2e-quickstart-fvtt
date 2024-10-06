@@ -6,6 +6,8 @@ import { toc2eQuickstartThemeSeed } from "./toc2eQuickstartTheme";
 // const key = "trail-of-cthulhu-2e";
 console.log(`[${moduleTitle}] initializing`);
 
+let addButtonsToAdventureImporter = false;
+
 // Inject CSS
 // normal css imports don't work in foundry because the html is loaded from
 // foundry itself and vite's css injection never kicks in. So we have to
@@ -44,6 +46,9 @@ Hooks.once("init", () => {
     imported: "Imported",
     dontshow: "Don't show again",
   });
+
+  addButtonsToAdventureImporter =
+    game.settings.get(moduleId, "adventure-import") === "show";
 });
 
 /// ///////////////////////////////////////////////////////////////////////////
@@ -67,6 +72,55 @@ Hooks.on("ready", async () => {
   }
   // @ts-expect-error - we know it exists
   adv.sheet.render(true);
+});
+
+/// ///////////////////////////////////////////////////////////////////////////
+// hack the adventure sheet when it renders
+Hooks.on("renderAdventureImporter", (app: any, html: any, data: any) => {
+  if (app.adventure._id !== "iI5qMgsPPkMtl2TT") {
+    return;
+  }
+  if (!addButtonsToAdventureImporter) {
+    return;
+  }
+  addButtonsToAdventureImporter = false;
+  html[0].style.height = `${parseInt(html[0].style.height) + 30}px`;
+  const dontShowButton = $("<button type='button'>Don't show again</button>");
+  dontShowButton.on("click", () => {
+    void (game as Game).settings.set(
+      moduleId,
+      "adventure-import",
+      adventureImportDontShow,
+    );
+    app.close();
+    // ui.notifications!.info("Adventure sheet will not show again.");
+    const d = new Dialog({
+      title: "Adventure sheet",
+      content:
+        "<p>You can find the adventure in the <b>Trail of Cthulhu 2e Quickstart</b> compendium if you want it later.</p>",
+      buttons: {
+        ok: {
+          icon: '<i class="fas fa-check"></i>',
+          label: "Okay!",
+        },
+      },
+      default: "ok",
+    });
+    d.render(true);
+  });
+  $(html).find(".adventure-footer").append(dontShowButton);
+});
+
+// Flip the setting when the adventure gets imported
+Hooks.on("importAdventure", (adventure: any) => {
+  if (adventure._id !== "iI5qMgsPPkMtl2TT") {
+    return;
+  }
+  void (game as Game).settings.set(
+    moduleId,
+    adventureImportSettingKey,
+    adventureImportImported,
+  );
 });
 
 /// ///////////////////////////////////////////////////////////////////////////
