@@ -17,6 +17,59 @@ document.head.appendChild(styleElement);
 CONFIG.Investigator?.installTheme(themeName, toc2eQuickstartThemeSeed);
 CONFIG.Investigator?.installPreset(`${moduleId}`, toc2eQuickstartPreset);
 
+/// ///////////////////////////////////////////////////////////////////////////
+// register settings
+const adventureImportSettingKey = "adventure-import";
+const adventureImportShow = "show";
+const adventureImportImported = "imported";
+const adventureImportDontShow = "dont-show";
+
+Hooks.once("init", () => {
+  if (!(game instanceof Game)) {
+    return;
+  }
+  // the actual foundry setting is registered here
+  game.settings.register(moduleId, adventureImportSettingKey, {
+    name: "Adventure import",
+    scope: "world",
+    config: true,
+    default: "show",
+    type: String,
+    // @ts-expect-error - idk how this is supposed to work
+    choices: {
+      [adventureImportShow]: "Show adventure sheet on startup",
+      [adventureImportImported]: "Adventure already imported",
+      [adventureImportDontShow]: "Don't show adventure sheet on startup",
+    },
+    imported: "Imported",
+    dontshow: "Don't show again",
+  });
+});
+
+/// ///////////////////////////////////////////////////////////////////////////
+// show the adventure sheet on startup
+Hooks.on("ready", async () => {
+  if (!(game instanceof Game) || !game.user?.isGM) {
+    return;
+  }
+  const setting = game.settings.get(moduleId, "adventure-import");
+  const pack = game.packs.get("toc-2e-quickstart.stranger-shores");
+  if (
+    pack === undefined ||
+    setting === adventureImportDontShow ||
+    setting === adventureImportImported
+  ) {
+    return;
+  }
+  const adv = (await pack.getDocuments())[0];
+  if (adv === undefined) {
+    return;
+  }
+  // @ts-expect-error - we know it exists
+  adv.sheet.render(true);
+});
+
+/// ///////////////////////////////////////////////////////////////////////////
 // HMR for themes
 // we can only trigger HMR from the module that directly imports the module
 // being replaced. we call CONFIG.Investigator?.installTheme to replace it in
