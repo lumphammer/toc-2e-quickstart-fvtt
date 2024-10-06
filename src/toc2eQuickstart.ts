@@ -4,6 +4,8 @@ import processedStyles from "./toc2eQuickstart.scss?inline";
 import { toc2eQuickstartPreset } from "./toc2eQuickstartPreset";
 import { toc2eQuickstartThemeSeed } from "./toc2eQuickstartTheme";
 
+const adventureId = "iI5qMgsPPkMtl2TT";
+
 // const key = "trail-of-cthulhu-2e";
 console.log(`[${moduleTitle}] initializing`);
 
@@ -27,11 +29,13 @@ const adventureImportShow = "show";
 const adventureImportImported = "imported";
 const adventureImportDontShow = "dont-show";
 
+/// ///////////////////////////////////////////////////////////////////////////
+// init hook
 Hooks.once("init", () => {
   if (!(game instanceof Game)) {
     return;
   }
-  // the actual foundry setting is registered here
+  // register the setting for whether to show the adventure sheet on startup
   game.settings.register(moduleId, adventureImportSettingKey, {
     name: "Adventure import",
     scope: "world",
@@ -48,12 +52,14 @@ Hooks.once("init", () => {
     dontshow: "Don't show again",
   });
 
+  // bit of funky logic here to determine whether to add the "don't show again"
+  // button to the adventure sheet
   addButtonsToAdventureImporter =
     game.settings.get(moduleId, "adventure-import") === "show";
 });
 
 /// ///////////////////////////////////////////////////////////////////////////
-// show the adventure sheet on startup
+// ready hook - show the adventure sheet on startup if needed
 Hooks.on("ready", async () => {
   if (!(game instanceof Game) || !game.user?.isGM) {
     return;
@@ -77,8 +83,12 @@ Hooks.on("ready", async () => {
 
 /// ///////////////////////////////////////////////////////////////////////////
 // hack the adventure sheet when it renders
+//
+// look, this is cheap, I know it is. but I don't enjoy working with handlebars
+// templates, and anyway making a whole custom adventure sheet seems like a ton
+// of faff to add one button.
 Hooks.on("renderAdventureImporter", (app: any, html: any, data: any) => {
-  if (app.adventure._id !== "iI5qMgsPPkMtl2TT") {
+  if (app.adventure._id !== adventureId) {
     return;
   }
   if (!addButtonsToAdventureImporter) {
@@ -86,15 +96,16 @@ Hooks.on("renderAdventureImporter", (app: any, html: any, data: any) => {
   }
   addButtonsToAdventureImporter = false;
   html[0].style.height = `${parseInt(html[0].style.height) + 30}px`;
-  const dontShowButton = $("<button type='button'>Don't show again</button>");
-  dontShowButton.on("click", () => {
+  const dontShowAgainButton = $(
+    "<button type='button'>Don't show again</button>",
+  );
+  dontShowAgainButton.on("click", () => {
     void (game as Game).settings.set(
       moduleId,
       "adventure-import",
       adventureImportDontShow,
     );
     app.close();
-    // ui.notifications!.info("Adventure sheet will not show again.");
     const d = new Dialog({
       title: "Adventure sheet",
       content:
@@ -109,12 +120,13 @@ Hooks.on("renderAdventureImporter", (app: any, html: any, data: any) => {
     });
     d.render(true);
   });
-  $(html).find(".adventure-footer").append(dontShowButton);
+  $(html).find(".adventure-footer").append(dontShowAgainButton);
 });
 
-// When the adventure gets imported
+/// ///////////////////////////////////////////////////////////////////////////
+// When the adventure gets imported, we start asking some questions
 Hooks.on("importAdventure", (adventure: any) => {
-  if (adventure._id !== "iI5qMgsPPkMtl2TT") {
+  if (adventure._id !== adventureId) {
     return;
   }
   // flip the setting to say it's been imported
