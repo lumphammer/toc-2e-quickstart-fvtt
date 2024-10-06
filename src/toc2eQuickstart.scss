@@ -1,14 +1,4 @@
-// foundry's default styles mean our compendium pack names get cut off
-.compendium-sidebar
-  .directory-item.compendium[data-pack*="toc-2e-quickstart"]
-  h3 {
-  // was 16px
-  font-size: 1em;
-  // was 80%
-  max-width: 100%;
-}
-
-.toc-2e-quickstart {
+@mixin core {
   --dark: #695502;
   --medium: #957612;
   --light: #cfa225;
@@ -54,30 +44,17 @@
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
   }
-
-  .journal-entry-pages {
-    // background: url(/modules/toc-2e-quickstart/assets/toc2eQuickstartTheme/ToC_character_sheet_background.webp);
-  }
-  .scrollable {
-    // background-size: cover;
-    // background-repeat: no-repeat;
-    // background-position: center;
-  }
-
-  article {
-    background: linear-gradient(
-        to bottom,
-        var(--wallpaper-transparent) 0%,
-        var(--wallpaper-transparent) 100%
-      ),
-      url(/modules/toc-2e-quickstart/assets/toc2eQuickstartTheme/repeating-text-background.webp),
-      linear-gradient(to bottom, var(--wallpaper) 0%, var(--wallpaper) 100%);
-    background-repeat: repeat-y;
-    // background-size: cover;
-    padding: 3em 3em;
-    min-height: 100%;
-  }
-
+  background: linear-gradient(
+      to bottom,
+      var(--wallpaper-transparent) 0%,
+      var(--wallpaper-transparent) 100%
+    ),
+    url(/modules/toc-2e-quickstart/assets/toc2eQuickstartTheme/repeating-text-background.webp),
+    linear-gradient(to bottom, var(--wallpaper) 0%, var(--wallpaper) 100%);
+  background-repeat: repeat-y;
+  // background-size: cover;
+  padding: 3em 3em;
+  min-height: 100%;
   blockquote {
     border: none;
     padding: 0;
@@ -113,9 +90,52 @@
   li {
     margin-bottom: 1em;
   }
+}
 
-  img {
-    border: 1px solid var(--text);
-    box-shadow: 0.2em 0.2em 1em var(--text);
+// foundry's default styles mean our compendium pack names get cut off
+.compendium-sidebar
+  .directory-item.compendium[data-pack*="toc-2e-quickstart"]
+  h3 {
+  // was 16px
+  font-size: 1em;
+  // was 80%
+  max-width: 100%;
+}
+
+.toc-2e-quickstart {
+  article {
+    @include core;
+    img {
+      border: 1px solid var(--text);
+      box-shadow: 0.2em 0.2em 1em var(--text);
+    }
+  }
+}
+
+// Adventure window - make it pretty
+
+// id="AdventureImporter-Compendium-toc-2e-quickstart-stranger-shores-Adventure-iI5qMgsPPkMtl2TT"
+[id^="AdventureImporter-Compendium-toc-2e"] {
+  .window-content {
+    @include core;
+    h1 {
+      font-family: "Engebrechtre", serif;
+      margin: 0;
+      padding: 0;
+    }
+    figure.adventure-banner {
+      img {
+        height: 250px;
+        object-position: top;
+      }
+      figcaption {
+        margin: 1em auto 1em auto;
+        font-weight: normal;
+        text-align: left;
+        li {
+          margin-bottom: 0em;
+        }
+      }
+    }
   }
 }
