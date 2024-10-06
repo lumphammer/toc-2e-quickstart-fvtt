@@ -1,14 +1,14 @@
-2024/10/05-19:51:28.459513 7fd07affd640 Recovering log #107
-2024/10/05-19:51:28.463836 7fd07affd640 Delete type=0 #107
-2024/10/05-19:51:28.463858 7fd07affd640 Delete type=3 #105
-2024/10/05-20:10:27.027099 7fcb79fef640 Level-0 table #112: started
-2024/10/05-20:10:27.029630 7fcb79fef640 Level-0 table #112: 96100 bytes OK
-2024/10/05-20:10:27.031809 7fcb79fef640 Delete type=0 #110
-2024/10/05-20:10:27.032016 7fcb79fef640 Manual compaction at level-0 from '!adventures!iI5qMgsPPkMtl2TT' @ 72057594037927935 : 1 .. '!adventures!iI5qMgsPPkMtl2TT' @ 0 : 0; will stop at '!adventures!iI5qMgsPPkMtl2TT' @ 13 : 1
-2024/10/05-20:10:27.032027 7fcb79fef640 Compacting 1@0 + 1@1 files
-2024/10/05-20:10:27.034452 7fcb79fef640 Generated table #113@0: 1 keys, 96100 bytes
-2024/10/05-20:10:27.034474 7fcb79fef640 Compacted 1@0 + 1@1 files => 96100 bytes
-2024/10/05-20:10:27.036378 7fcb79fef640 compacted to: files[ 0 1 0 0 0 0 0 ]
-2024/10/05-20:10:27.036440 7fcb79fef640 Delete type=2 #100
-2024/10/05-20:10:27.036512 7fcb79fef640 Delete type=2 #112
-2024/10/05-20:10:27.040745 7fcb79fef640 Manual compaction at level-0 from '!adventures!iI5qMgsPPkMtl2TT' @ 13 : 1 .. '!adventures!iI5qMgsPPkMtl2TT' @ 0 : 0; will stop at (end)
+2024/10/06-19:06:53.334418 7fd07bfff640 Recovering log #125
+2024/10/06-19:06:53.338844 7fd07bfff640 Delete type=3 #123
+2024/10/06-19:06:53.338890 7fd07bfff640 Delete type=0 #125
+2024/10/06-19:08:00.673710 7fcb79fef640 Level-0 table #130: started
+2024/10/06-19:08:00.677471 7fcb79fef640 Level-0 table #130: 96130 bytes OK
+2024/10/06-19:08:00.679184 7fcb79fef640 Delete type=0 #128
+2024/10/06-19:08:00.681192 7fcb79fef640 Manual compaction at level-0 from '!adventures!iI5qMgsPPkMtl2TT' @ 72057594037927935 : 1 .. '!adventures!iI5qMgsPPkMtl2TT' @ 0 : 0; will stop at '!adventures!iI5qMgsPPkMtl2TT' @ 19 : 1
+2024/10/06-19:08:00.681210 7fcb79fef640 Compacting 1@0 + 1@1 files
+2024/10/06-19:08:00.684476 7fcb79fef640 Generated table #131@0: 1 keys, 96130 bytes
+2024/10/06-19:08:00.684511 7fcb79fef640 Compacted 1@0 + 1@1 files => 96130 bytes
+2024/10/06-19:08:00.686249 7fcb79fef640 compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/10/06-19:08:00.687087 7fcb79fef640 Delete type=2 #118
+2024/10/06-19:08:00.687749 7fcb79fef640 Delete type=2 #130
+2024/10/06-19:08:00.690391 7fcb79fef640 Manual compaction at level-0 from '!adventures!iI5qMgsPPkMtl2TT' @ 19 : 1 .. '!adventures!iI5qMgsPPkMtl2TT' @ 0 : 0; will stop at (end)
