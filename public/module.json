@@ -2,7 +2,7 @@
   "id": "toc-2e-quickstart",
   "title": "Trail of Cthulhu 2e Quickstart",
   "description": "Quickstart text, pregenerated PCs, and a few other things",
-  "version": "1.0.0-alpha.12",
+  "version": "1.0.0-alpha.13",
   "authors": [{ "name": "Neil de Carteret" }],
   "esmodules": ["toc2eQuickstart.js"],
   "styles": ["assets/fonts/fonts.css"],
