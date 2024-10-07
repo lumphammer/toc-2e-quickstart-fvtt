@@ -22,5 +22,9 @@ Includes:
 
 [Dustismo Roman](https://www.dafont.com/dustismo-roman.font?text=Trail+of+Cthulhu) by Cheapskate Fonts, licensed under [OFL][ofl].
 
+Map data from [OpenStreetMap](https://www.openstreetmap.org/#map=16/41.45452/-71.34886), used under the [ODbL][odbl].
+
 [ofl]: https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL
 [cc0]: https://creativecommons.org/publicdomain/zero/1.0/
+[odbl]: https://openstreetmap.org/copyright
+
