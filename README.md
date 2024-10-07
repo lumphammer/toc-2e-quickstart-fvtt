@@ -1,5 +1,7 @@
 # Trail of Cthulhu 2nd Edition Quickstart for Foundry VTT
 
+This is the official Trail of Cthulhu 2nd Edition quickstart module for Foundry VTT.
+
 This module gives you a fully playable QuickStart version of [Trail of Cthulhu 2nd Edition](https://pelgranepress.com/trail-of-cthulhu-second-edition/).
 
 
