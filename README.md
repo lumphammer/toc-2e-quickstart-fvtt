@@ -1,15 +1,47 @@
 # Trail of Cthulhu 2nd Edition Quickstart for Foundry VTT
 
-This is a module for [Foundry VTT](https://foundryvtt.com/) that adds a Quickstart system for the [Trail of Cthulhu 2nd Edition](https://pelgranepress.com/trail-of-cthulhu-second-edition/) campaign setting.
+This module gives you a fully playable QuickStart version of [Trail of Cthulhu 2nd Edition](https://pelgranepress.com/trail-of-cthulhu-second-edition/).
 
-*You will also need the [INVESTIGATOR System](https://github.com/n3dst4/gumshoe-fvtt) to use this module - Foundry will prompt you to install it if you don't have it already.*
 
-Includes:
+## Includes
 
 * An introduction to the Trail of Cthulhu 2nd Edition game.
 * A starter adventure, "Stranger Shores".
-* Six pre-generated characters, each with their own abilities, motivations, and backstories.
-* A new character sheet theme to match the art style of the Trail of Cthulhu 2nd Edition book.
+* Seven pre-generated characters, each with their own abilities, motivations, and backstories.
+* A new character sheet theme to match the art style of Trail of Cthulhu 2nd Edition.
+* A thematic map of Brenton Point, Rhode Island, where the adventure is set.
+
+
+## How to install
+
+You will need a [Foundry VTT](https://foundryvtt.com/) server - see [the Foundry VTT Installation Guide](https://foundryvtt.com/article/installation/) for details.
+
+Install the the [GUMSHOE System](https://github.com/n3dst4/gumshoe-fvtt). You can by clicking "Game Systems" and searching for "GUMSHOE" in the "Install System" dialog.
+
+Install this module by clicking "Add-on Modules" and searching for "Trail of Cthulhu 2e Quickstart" in the "Install Module" dialog.
+
+
+## How to use
+
+Create a new world or load your an existing GUMSHOE system world (remember to take a backup if you're using an existing world!).
+
+Activate the module in the "Manage modules" dialog (find it in the sidebar). Allow the page to reload.
+
+You will be prompted to import the Quickstart content, including the Quickstart text, the "Stranger Shorts" scenario, and the pre-generated characters.
+
+After the adventure has been imported, you'll be prompted to apply the Trail of Cthulhu 2e preset - this will apply all the settings needed to make the world run with ToC 2e rules.
+
+Once you've done that, you can start playing the game!
+
+
+## Need help?
+
+Pop over to the [Pelgrane Press Discord server](https://discord.com/channels/692113540210753568/720741108937916518) and ask your question in the "Virtual Tabletops" channel.
+
+
+## Cartographical Disclaimer
+
+If you know Rhode Island well, you may notice that the map is not actually from the 1930s.
 
 
 ## Copyright
