@@ -6,7 +6,7 @@
 [subrepo]
 	remote = git@github.com:n3dst4/shared-fvtt-bits.git
 	branch = main
-	commit = f0333e8abbffafd821b32dd28eabe0ef9375316c
-	parent = 84210f21deda61aab141c80b5643cf7e312b0473
+	commit = 0c6e3e5633eae5a285f68633e010b6f41fc6e335
+	parent = 0dce30e37e32c1b89cdb88be5d44252d733c9cbc
 	method = merge
 	cmdver = 0.4.9
