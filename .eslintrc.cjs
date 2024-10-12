@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ["./packages/shared-fvtt-bits/dotfiles/.eslintrc.cjs"],
+  extends: ["./packages/shared-fvtt-bits/dotfiles/import/.eslintrc.cjs"],
   ignorePatterns: ["src/toc2eQuickstart.js"],
   // whatever other config you need for your project
   rules: {
