@@ -19,7 +19,7 @@ jobs:
           concurrent_skipping: same_content_newer
 
   ci-cd:
-    uses: lumphammer/gh-actions/.github/workflows/ci-cd-reusable.yml@2024-10-07
+    uses: lumphammer/gh-actions/.github/workflows/ci-cd-reusable.yml@2024-10-19.1
     needs: pre_job
     # skip the job is it a duplicate, but not if it's a tag (we always want to
     # make sure we build a tag so we get a release.)
@@ -28,8 +28,10 @@ jobs:
       contents: write
     with:
       manifest_file_name: "module.json"
-      public_path: "public"
-      package_file_name: "toc-2e-quickstart.zip"
-      pnpm_version: "9"
-      package_path: "build_package"
+      package_id: "toc-2e-quickstart"
+      release_to_bucket: false
+      foundry_package_release: true
+    secrets:
+      FOUNDRY_PACKAGE_RELEASE_TOKEN: ${{secrets.FOUNDRY_PACKAGE_RELEASE_TOKEN}}
+
 

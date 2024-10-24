@@ -6,7 +6,6 @@ import {
   link,
   packidge,
   unlink,
-  updateManifestFromCITagPush,
   copyPacksBack,
 } from "@lumphammer/shared-fvtt-bits/task-core/tasks";
 
@@ -28,12 +27,5 @@ boot({
     packagePath: "build_package",
   },
 
-  commands: [
-    clean,
-    link,
-    unlink,
-    updateManifestFromCITagPush,
-    packidge,
-    copyPacksBack,
-  ],
+  commands: [clean, link, unlink, packidge, copyPacksBack],
 });
