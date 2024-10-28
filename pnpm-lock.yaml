@@ -16,7 +16,7 @@ importers:
         specifier: ^9.280.1
         version: 9.280.1(@pixi/constants@5.3.11)(@pixi/core@5.3.11)(@pixi/display@5.3.11)(@pixi/graphics@5.3.11)(@pixi/math@5.3.11)(@pixi/utils@5.3.11)
       '@lumphammer/investigator-fvtt-types':
-        specifier: ^1.12.1
+        specifier: ^1.13.2
         version: 1.13.2
       '@swc/plugin-emotion':
         specifier: ^4.0.3
