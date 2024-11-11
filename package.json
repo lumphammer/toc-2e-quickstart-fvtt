@@ -34,7 +34,7 @@
     "sass-embedded": "^1.80.6",
     "tsx": "^4.19.2",
     "typescript": "^5.6.3",
-    "vite": "^5.4.10"
+    "vite": "^5.4.11"
   },
   "dependencies": {
     "@lumphammer/shared-fvtt-bits": "workspace:^"
