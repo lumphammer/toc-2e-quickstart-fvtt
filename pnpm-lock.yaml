@@ -40,8 +40,8 @@ importers:
         specifier: ^4.19.2
         version: 4.19.2
       typescript:
-        specifier: ^5.7.2
-        version: 5.7.2
+        specifier: ^5.7.3
+        version: 5.7.3
       vite:
         specifier: ^6.0.7
         version: 6.0.7(@types/node@22.7.0)(sass-embedded@1.83.1)(tsx@4.19.2)
@@ -856,6 +856,7 @@ packages:
 
   '@pixi/graphics-smooth@0.0.22':
     resolution: {integrity: sha512-qq2u+BJBIDBuuSTc2Xzm1D/8RiiKBdxnVDiMb7Go5v8achnV5ctC6m+rf8Mq0sWm66mbOqu1aq/9efT4A4sPrA==}
+    engines: {node: '>=14', npm: '>=7'}
     peerDependencies:
       '@pixi/constants': ^6.0.4
       '@pixi/core': ^6.0.4
@@ -2745,6 +2746,7 @@ packages:
   rollup-plugin-visualizer@5.13.1:
     resolution: {integrity: sha512-vMg8i6BprL8aFm9DKvL2c8AwS8324EgymYQo9o6E26wgVvwMhsJxS37aNL6ZsU7X9iAcMYwdME7gItLfG5fwJg==}
     engines: {node: '>=18'}
+    deprecated: Contains unintended breaking changes
     hasBin: true
     peerDependencies:
       rolldown: 1.x
@@ -3147,8 +3149,8 @@ packages:
     engines: {node: '>=14.17'}
     hasBin: true
 
-  typescript@5.7.2:
-    resolution: {integrity: sha512-i5t66RHxDvVN40HfDd1PsEThGNnlMCMT3jMUuoh9/0TaqWevNontacunWyN02LA9/fIbEWlcHZcgTKb9QoaLfg==}
+  typescript@5.7.3:
+    resolution: {integrity: sha512-84MVSjMEHP+FQRPy3pX9sTVV/INIex71s9TL2Gm5FG/WG1SqXeKyZ0k7/blY/4FdOzI12CBy1vGc4og/eus0fw==}
     engines: {node: '>=14.17'}
     hasBin: true
 
@@ -6632,7 +6634,7 @@ snapshots:
 
   typescript@5.6.3: {}
 
-  typescript@5.7.2: {}
+  typescript@5.7.3: {}
 
   uglify-js@3.19.3:
     optional: true
