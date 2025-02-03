@@ -19,7 +19,7 @@ jobs:
           concurrent_skipping: same_content_newer
 
   ci-cd:
-    uses: lumphammer/gh-actions/.github/workflows/ci-cd-reusable.yml@2024-10-19.1
+    uses: lumphammer/gh-actions/.github/workflows/ci-cd-reusable.yml@2025-02-03.1
     needs: pre_job
     # skip the job is it a duplicate, but not if it's a tag (we always want to
     # make sure we build a tag so we get a release.)
