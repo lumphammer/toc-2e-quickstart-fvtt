@@ -37,6 +37,7 @@
     "vite": "^6.1.0"
   },
   "dependencies": {
-    "@lumphammer/shared-fvtt-bits": "workspace:^"
+    "@lumphammer/shared-fvtt-bits": "workspace:^",
+    "eslint": "8"
   }
 }
