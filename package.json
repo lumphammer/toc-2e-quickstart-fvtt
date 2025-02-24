@@ -38,6 +38,6 @@
   },
   "dependencies": {
     "@lumphammer/shared-fvtt-bits": "workspace:^",
-    "eslint": "8"
+    "eslint": "9.21.0"
   }
 }
