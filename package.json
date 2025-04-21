@@ -22,7 +22,7 @@
   },
   "keywords": [],
   "author": "",
-  "packageManager": "pnpm@10.8.0+sha512.0e82714d1b5b43c74610193cb20734897c1d00de89d0e18420aebc5977fa13d780a9cb05734624e81ebd81cc876cd464794850641c48b9544326b5622ca29971",
+  "packageManager": "pnpm@10.9.0+sha512.0486e394640d3c1fb3c9d43d49cf92879ff74f8516959c235308f5a8f62e2e19528a65cdc2a3058f587cde71eba3d5b56327c8c33a97e4c4051ca48a10ca2d5f",
   "devDependencies": {
     "@league-of-foundry-developers/foundry-vtt-types": "^9.280.1",
     "@lumphammer/investigator-fvtt-types": "^1.13.2",
@@ -34,7 +34,7 @@
     "sass-embedded": "^1.86.3",
     "tsx": "^4.19.3",
     "typescript": "^5.8.3",
-    "vite": "^6.2.5"
+    "vite": "^6.3.2"
   },
   "dependencies": {
     "@lumphammer/shared-fvtt-bits": "workspace:^",
