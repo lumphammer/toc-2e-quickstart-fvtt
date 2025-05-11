@@ -24,7 +24,7 @@
   "author": "",
   "packageManager": "pnpm@10.10.0+sha512.d615db246fe70f25dcfea6d8d73dee782ce23e2245e3c4f6f888249fb568149318637dca73c2c5c8ef2a4ca0d5657fb9567188bfab47f566d1ee6ce987815c39",
   "devDependencies": {
-    "@league-of-foundry-developers/foundry-vtt-types": "^9.280.1",
+    "@league-of-foundry-developers/foundry-vtt-types": "^13.340.1",
     "@lumphammer/investigator-fvtt-types": "^1.13.2",
     "@swc/plugin-emotion": "^9.0.4",
     "@vitejs/plugin-react-swc": "^3.9.0",
