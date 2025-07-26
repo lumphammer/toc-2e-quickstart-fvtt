@@ -10,7 +10,11 @@ export async function activatePreset() {
   for (const key in toc2eQuickstartPreset) {
     let currentValue;
     try {
-      currentValue = (game as Game).settings.get("investigator", key) as any;
+      currentValue = (game as foundry.Game).settings.get(
+        // @ts-expect-error - we know this exists
+        "investigator",
+        key,
+      ) as any;
       // eslint-disable-next-line unused-imports/no-unused-vars
     } catch (e) {
       continue;
@@ -19,8 +23,14 @@ export async function activatePreset() {
     console.info(`Activating ${key}`);
     console.log("Current value", currentValue);
     console.log("New value", newValue);
-    await (game as Game).settings.set("investigator", key, newValue);
+    // @ts-expect-error - we know this exists
+    await (game as foundry.Game).settings.set("investigator", key, newValue);
   }
-  await (game as Game).settings.set("investigator", "systemPreset", moduleId);
+  await (game as foundry.Game).settings.set(
+    // @ts-expect-error - we know this exists
+    "investigator",
+    "systemPreset",
+    moduleId,
+  );
   ui.notifications!.notify("System preset has been applied.");
 }
