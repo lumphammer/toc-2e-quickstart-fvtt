@@ -1,3 +1,5 @@
+import "./configuration";
+
 import { activatePreset } from "./activatePreset";
 import {
   adventureImportDontShow,
@@ -11,7 +13,6 @@ import {
 import processedStyles from "./toc2eQuickstart.scss?inline";
 import { toc2eQuickstartPreset } from "./toc2eQuickstartPreset";
 import { toc2eQuickstartThemeSeed } from "./toc2eQuickstartTheme";
-import "./configuration";
 
 const adventureId = "iI5qMgsPPkMtl2TT";
 
@@ -37,7 +38,7 @@ CONFIG.Investigator?.installPreset(`${moduleId}`, toc2eQuickstartPreset);
 /// ///////////////////////////////////////////////////////////////////////////
 // init hook
 Hooks.once("init", () => {
-  if (!(game instanceof Game)) {
+  if (!(game instanceof foundry.Game)) {
     return;
   }
   // register the setting for whether to show the adventure sheet on startup
@@ -63,7 +64,7 @@ Hooks.once("init", () => {
 /// ///////////////////////////////////////////////////////////////////////////
 // ready hook - show the adventure sheet on startup if needed
 Hooks.on("ready", async () => {
-  if (!(game instanceof Game) || !game.user?.isGM) {
+  if (!(game instanceof foundry.Game) || !game.user?.isGM) {
     return;
   }
   const setting = game.settings.get(moduleId, "adventure-import");
@@ -80,7 +81,7 @@ Hooks.on("ready", async () => {
     return;
   }
   // @ts-expect-error - we know it exists
-  adv.sheet.render(true);
+  void adv.sheet.render(true);
 });
 
 /// ///////////////////////////////////////////////////////////////////////////
@@ -102,25 +103,26 @@ Hooks.on("renderAdventureImporter", (app: any, html: any, data: any) => {
     "<button type='button'>Don't show again</button>",
   );
   dontShowAgainButton.on("click", () => {
-    void (game as Game).settings.set(
+    void (game as foundry.Game).settings.set(
       moduleId,
       "adventure-import",
       adventureImportDontShow,
     );
     app.close();
-    const d = new Dialog({
-      title: "Adventure sheet",
+    const d = new foundry.applications.api.DialogV2({
+      window: { title: "Adventure sheet" },
       content:
         "<p>You can find the adventure in the <b>Trail of Cthulhu 2e Quickstart</b> compendium if you want it later.</p>",
-      buttons: {
-        ok: {
+      buttons: [
+        {
+          action: "ok",
           icon: '<i class="fas fa-check"></i>',
           label: "Okay!",
+          default: true,
         },
-      },
-      default: "ok",
+      ],
     });
-    d.render(true);
+    void d.render({ force: true });
   });
   $(html).find(".adventure-footer").append(dontShowAgainButton);
 });
@@ -132,47 +134,50 @@ Hooks.on("importAdventure", (adventure: any) => {
     return;
   }
   // flip the setting to say it's been imported
-  void (game as Game).settings.set(
+  void (game as foundry.Game).settings.set(
     moduleId,
     adventureImportSettingKey,
     adventureImportImported,
   );
   // Ask the GM if they want to apply the preset
-  const d = new Dialog({
-    title: "Apply preset?",
+  const d = new foundry.applications.api.DialogV2({
+    window: { title: "Apply preset?" },
     content:
       "<p>Configure your GUMSHOE System for <b>Trail of Cthulhu 2e Quickstart</b>?</p>",
-    buttons: {
-      ok: {
+    buttons: [
+      {
+        action: "ok",
         icon: '<i class="fas fa-check"></i>',
         label: "Yes, set it up",
         callback: () => {
           void activatePreset();
         },
+        default: true,
       },
-      cancel: {
+      {
+        action: "cancel",
         icon: '<i class="fas fa-times"></i>',
         label: "Cancel",
         callback: () => {
           setTimeout(() => {
-            const d = new Dialog({
-              title: "Preset not applied",
+            const d = new foundry.applications.api.DialogV2({
+              window: { title: "Preset not applied" },
               content:
                 "<p>You can find the preset in the <b>GUMSHOE System Settings</b> at any time.</p>",
-              buttons: {
-                ok: {
+              buttons: [
+                {
+                  action: "ok",
                   label: "Okay",
                 },
-              },
+              ],
             });
-            d.render(true);
+            void d.render({ force: true });
           }, 500);
         },
       },
-    },
-    default: "ok",
+    ],
   });
-  d.render(true);
+  void d.render({ force: true });
 });
 
 /// ///////////////////////////////////////////////////////////////////////////
