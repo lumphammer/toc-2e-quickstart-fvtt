@@ -17,7 +17,8 @@
     "lint:check": "eslint src",
     "lint:fix": "eslint src --fix",
     "typecheck": "tsc --noEmit",
-    "do-release": "./packages/shared-fvtt-bits/scripts/do-release.sh",
+    "do-full-release": "./packages/shared-fvtt-bits/scripts/do-full-release.sh",
+    "do-preprelease": "./packages/shared-fvtt-bits/scripts/do-prerelease.sh",
     "copy-packs-back": "./tasks.ts copyPacksBack",
     "check": "pnpm run typecheck && pnpm run test --run && pnpm run lint:check && pnpm run format:check && pnpm run build"
   },
