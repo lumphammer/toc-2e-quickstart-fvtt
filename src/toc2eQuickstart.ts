@@ -1,8 +1,17 @@
 import { activatePreset } from "./activatePreset";
-import { moduleId, moduleTitle, themeName } from "./constants";
+import {
+  adventureImportDontShow,
+  adventureImportImported,
+  adventureImportSettingKey,
+  adventureImportShow,
+  moduleId,
+  moduleTitle,
+  themeName,
+} from "./constants";
 import processedStyles from "./toc2eQuickstart.scss?inline";
 import { toc2eQuickstartPreset } from "./toc2eQuickstartPreset";
 import { toc2eQuickstartThemeSeed } from "./toc2eQuickstartTheme";
+import "./configuration";
 
 const adventureId = "iI5qMgsPPkMtl2TT";
 
@@ -24,10 +33,6 @@ CONFIG.Investigator?.installPreset(`${moduleId}`, toc2eQuickstartPreset);
 
 /// ///////////////////////////////////////////////////////////////////////////
 // register settings
-const adventureImportSettingKey = "adventure-import";
-const adventureImportShow = "show";
-const adventureImportImported = "imported";
-const adventureImportDontShow = "dont-show";
 
 /// ///////////////////////////////////////////////////////////////////////////
 // init hook
@@ -42,14 +47,11 @@ Hooks.once("init", () => {
     config: true,
     default: "show",
     type: String,
-    // @ts-expect-error - idk how this is supposed to work
     choices: {
       [adventureImportShow]: "Show adventure sheet on startup",
       [adventureImportImported]: "Adventure already imported",
       [adventureImportDontShow]: "Don't show adventure sheet on startup",
     },
-    imported: "Imported",
-    dontshow: "Don't show again",
   });
 
   // bit of funky logic here to determine whether to add the "don't show again"
