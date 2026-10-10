@@ -15,8 +15,7 @@ export async function activatePreset() {
         "investigator",
         key,
       ) as any;
-      // eslint-disable-next-line unused-imports/no-unused-vars
-    } catch (e) {
+    } catch {
       continue;
     }
     const newValue = toc2eQuickstartPreset[key as keyof PresetV1] as any;

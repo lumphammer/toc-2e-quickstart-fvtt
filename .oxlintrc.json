@@ -1,0 +1,6 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "extends": ["./packages/shared-fvtt-bits/dotfiles/import/oxlint.config.json"],
+  "plugins": ["typescript", "react"],
+  "ignorePatterns": ["src/toc2eQuickstart.js"]
+}
