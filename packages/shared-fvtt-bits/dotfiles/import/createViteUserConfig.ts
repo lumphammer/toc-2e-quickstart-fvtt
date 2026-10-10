@@ -1,13 +1,10 @@
-/* eslint-disable @typescript-eslint/no-unsafe-assignment */
-/* eslint-disable @typescript-eslint/no-unsafe-argument */
-/* eslint-disable @typescript-eslint/no-unsafe-member-access */
-/// <reference types="vitest" />
+/// <reference types="vitest/config" />
 import react from "@vitejs/plugin-react-swc";
 import fs from "fs";
 import path from "path";
 import { visualizer } from "rollup-plugin-visualizer";
 import { fileURLToPath } from "url";
-import type { HttpProxy, PluginOption, UserConfig } from "vite";
+import type { PluginOption, UserConfig } from "vite";
 import svgr from "vite-plugin-svgr";
 
 import { vitePluginCompileFvttPacks as compilePacks } from "../../src/vitePluginCompileFvttPacks";
@@ -112,7 +109,7 @@ export function createViteUserConfig({
           // see https://github.com/http-party/node-http-proxy#modify-response
           selfHandleResponse: true,
           target: foundryUrl,
-          configure: (proxy: HttpProxy.Server) => {
+          configure: (proxy) => {
             proxy.on("proxyRes", function (proxyRes, req, res) {
               const body: Uint8Array[] = [];
               proxyRes.on("data", function (chunk) {
@@ -219,6 +216,14 @@ export function createViteUserConfig({
             plugins: [
               {
                 name: "preset-default",
+                params: {
+                  overrides: {
+                    // SVGO strips the viewBox when it matches the width and
+                    // height, which stops the SVG scaling when we size it with
+                    // CSS. We always want to be able to size these things.
+                    removeViewBox: false,
+                  },
+                },
               },
               // converts `style=color:red` to color=red
               {
