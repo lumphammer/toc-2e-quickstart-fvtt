@@ -24,7 +24,7 @@
   },
   "keywords": [],
   "author": "",
-  "packageManager": "pnpm@10.10.0+sha512.d615db246fe70f25dcfea6d8d73dee782ce23e2245e3c4f6f888249fb568149318637dca73c2c5c8ef2a4ca0d5657fb9567188bfab47f566d1ee6ce987815c39",
+  "packageManager": "pnpm@12.10.1",
   "devDependencies": {
     "@lumphammer/investigator-fvtt-types": "^1.13.2",
     "@swc/plugin-emotion": "^9.0.4",
@@ -47,6 +47,7 @@
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-simple-import-sort": "^12.1.1",
-    "eslint-plugin-unused-imports": "^4.1.4"
+    "eslint-plugin-unused-imports": "^4.1.4",
+    "fvtt-types": "13.346.0-beta.20250812191140"
   }
 }
