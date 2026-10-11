@@ -5,6 +5,8 @@ const config = createFvttViteConfig({
   foundryPackageId,
   packageType: "module",
   importMetaUrl: import.meta.url,
+  // no React/JSX in this module, so skip the React SWC + emotion plugins
+  includeReact: false,
 });
 
 export default config;

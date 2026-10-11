@@ -27,17 +27,15 @@
   "packageManager": "pnpm@12.10.1",
   "devDependencies": {
     "@lumphammer/investigator-fvtt-types": "^1.13.2",
-    "@swc/plugin-emotion": "^9.0.4",
-    "@vitejs/plugin-react-swc": "^3.9.0",
-    "fs-extra": "^11.3.0",
+    "fs-extra": "^11.4.1",
     "oxlint": "^1.87.0",
     "oxlint-tsgolint": "^7.0.2003",
-    "prettier": "^3.5.3",
-    "rollup-plugin-visualizer": "^5.13.1",
-    "sass-embedded": "^1.87.0",
-    "tsx": "^4.19.4",
-    "typescript": "^5.8.3",
-    "vite": "^6.3.3"
+    "prettier": "^3.9.9",
+    "rollup-plugin-visualizer": "^5.14.0",
+    "sass-embedded": "^1.105.1",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3",
+    "vite": "^8.3.4"
   },
   "dependencies": {
     "@lumphammer/shared-fvtt-bits": "workspace:^",
