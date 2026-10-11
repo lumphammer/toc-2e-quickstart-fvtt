@@ -26,18 +26,21 @@
   "packs": [
     {
       "name": "pc-abilities",
+      "path": "packs/pc-abilities",
       "label": "ToC 2e Quickstart PC Abilities",
       "system": "investigator",
       "type": "Item"
     },
     {
       "name": "gmc-abilities",
+      "path": "packs/gmc-abilities",
       "label": "ToC 2e Quickstart GMC Abilities",
       "system": "investigator",
       "type": "Item"
     },
     {
       "name": "stranger-shores",
+      "path": "packs/stranger-shores",
       "label": "Quickstart Adventure",
       "system": "investigator",
       "type": "Adventure"
