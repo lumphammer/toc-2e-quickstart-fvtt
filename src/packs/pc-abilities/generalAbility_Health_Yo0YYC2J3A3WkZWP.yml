@@ -1,0 +1,55 @@
+type: generalAbility
+name: Health
+img: /systems/investigator/assets/icons/fist.webp
+system:
+  notes:
+    format: richText
+    source: ""
+    html: ""
+  rating: 1
+  pool: 1
+  hasSpecialities: false
+  specialitiesMode: one
+  specialities: []
+  min: -12
+  max: 15
+  occupational: false
+  categoryId: General
+  showTracker: true
+  boost: false
+  excludeFromGeneralRefresh: false
+  refreshesDaily: false
+  unlocks: []
+  situationalModifiers: []
+  allowPoolToExceedRating: false
+  canBeInvestigative: false
+  goesFirstInCombat: false
+  hideIfZeroRated: false
+  mwTrumps: ""
+  mwTrumpedBy: ""
+  mwRefreshGroup: 2
+  combatBonus: 0
+  damageBonus: 0
+  isPushPool: false
+  category: General
+  type: generalAbility
+  img: /systems/investigator/assets/icons/fist.webp
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: "14.368"
+  systemId: investigator
+  systemVersion: 8.1.0
+  createdTime: 1727549353120
+  modifiedTime: 1727549353120
+  lastModifiedBy: GKXsVq42x956ejvq
+  exportSource: null
+folder: null
+_id: Yo0YYC2J3A3WkZWP
+sort: 0
+ownership:
+  default: 0
+  GKXsVq42x956ejvq: 3
+_key: "!items!Yo0YYC2J3A3WkZWP"

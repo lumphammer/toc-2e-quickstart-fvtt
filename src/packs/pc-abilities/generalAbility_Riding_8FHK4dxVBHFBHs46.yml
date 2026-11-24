@@ -1,0 +1,55 @@
+type: generalAbility
+name: Riding
+img: /systems/investigator/assets/icons/fist.webp
+system:
+  notes:
+    format: richText
+    source: ""
+    html: ""
+  rating: 0
+  pool: 0
+  hasSpecialities: false
+  specialitiesMode: one
+  specialities: []
+  min: 0
+  max: 8
+  occupational: false
+  categoryId: General
+  showTracker: false
+  boost: false
+  excludeFromGeneralRefresh: false
+  refreshesDaily: true
+  unlocks: []
+  situationalModifiers: []
+  allowPoolToExceedRating: false
+  canBeInvestigative: false
+  goesFirstInCombat: false
+  hideIfZeroRated: false
+  mwTrumps: ""
+  mwTrumpedBy: ""
+  mwRefreshGroup: 2
+  combatBonus: 0
+  damageBonus: 0
+  isPushPool: false
+  category: General
+  type: generalAbility
+  img: /systems/investigator/assets/icons/fist.webp
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: "14.368"
+  systemId: investigator
+  systemVersion: 8.1.0
+  createdTime: 1727549353120
+  modifiedTime: 1727549353120
+  lastModifiedBy: GKXsVq42x956ejvq
+  exportSource: null
+folder: null
+_id: 8FHK4dxVBHFBHs46
+sort: 0
+ownership:
+  default: 0
+  GKXsVq42x956ejvq: 3
+_key: "!items!8FHK4dxVBHFBHs46"
