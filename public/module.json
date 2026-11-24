@@ -18,7 +18,7 @@
         "type": "system",
         "manifest": "https://github.com/n3dst4/gumshoe-fvtt/releases/latest/download/system.json",
         "compatibility": {
-          "verified": "8"
+          "verified": "10"
         }
       }
     ]
