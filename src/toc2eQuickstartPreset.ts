@@ -7,7 +7,10 @@ import {
   toc2eQuickstartPCAbilityPackName,
 } from "./constants";
 
-export const toc2eQuickstartPreset: PresetV1 = {
+// Required<>, so every setting a preset controls has a value here: applying
+// the preset setting by setting (on INVESTIGATOR versions without
+// `applyPreset`) then leaves nothing over from the world's last preset.
+export const toc2eQuickstartPreset: Required<PresetV1> = {
   schemaVersion: "v1",
   displayName: "Trail of Cthulhu 2e (Quickstart)",
   defaultThemeName: themeName,
@@ -25,6 +28,8 @@ export const toc2eQuickstartPreset: PresetV1 = {
   newPCPacks: [`${moduleId}.${toc2eQuickstartPCAbilityPackName}`],
   newNPCPacks: [`${moduleId}.${toc2eQuickstartGMCAbilityPackName}`],
   useBoost: false,
+  hideTestDifficulty: true,
+  defaultTestDifficulty: null,
   useMwStyleAbilities: false,
   mwUseAlternativeItemTypes: false,
   useMwInjuryStatus: false,
@@ -77,6 +82,35 @@ export const toc2eQuickstartPreset: PresetV1 = {
       fields: {},
     },
   },
-  // useCards: false,
-  // cardCategories: [],
+  useDamageApplication: true,
+  useGunfireOnHumans: false,
+  useCriticalHits: false,
+  useLethalityAndAutofire: false,
+  useShotDryAndJams: false,
+  useExtendedRange: false,
+  useWalkingFire: false,
+  useWoundStatusEffects: true,
+  walkingFireSpendAbilities: ["Athletics"],
+  fullAutoSpendAbilities: ["Athletics", "Stability"],
+  useStabilityRules: true,
+  stabilityAbility: "Stability",
+  useSanityRules: true,
+  sanityAbility: "Sanity",
+  sanityCapAbility: "Cthulhu Mythos",
+  sanityCapBase: 10,
+  useStabilityStates: true,
+  // `upTo` is the highest Stability pool in each state
+  stabilityStates: {
+    shaken: { name: "Shaken", upTo: 0 },
+    shattered: { name: "Blasted", upTo: -6 },
+    gone: { name: "Doomed", upTo: -12 },
+  },
+  useBonds: false,
+  bondRebuildSpendCategory: "Interpersonal",
+  useTrauma: false,
+  traumaTypes: [],
+  useNetworkContacts: false,
+  networkAbility: "Network",
+  useCards: false,
+  cardCategories: [],
 };
