@@ -31,7 +31,6 @@ export const toc2eQuickstartThemeSeed: ThemeSeedV1 = {
   bodyFont: "16px 'Averia Serif Libre', serif",
   displayFont: "normal normal 1em 'Engebrechtre', serif",
   logo: {
-    fontScaleFactor: 20,
     frontTextElementStyle: {
       background: `linear-gradient(
         to bottom right,
