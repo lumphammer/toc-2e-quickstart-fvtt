@@ -22,6 +22,7 @@ const wallpaperImage = `url(modules/${moduleId}/assets/toc2eQuickstartTheme/ToC_
 export const toc2eQuickstartThemeSeed: ThemeSeedV1 = {
   schemaVersion: "v1",
   displayName: "Trail of Cthulhu Quickstart",
+  layout: "full-frame",
   global: `
   `,
   largeSheetRootStyle: {
