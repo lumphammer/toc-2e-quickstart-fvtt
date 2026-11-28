@@ -6,3 +6,5 @@ allowBuilds:
   classic-level: true
   esbuild: true
 blockExoticSubdeps: false
+minimumReleaseAgeExclude:
+  - '@lumphammer/investigator-fvtt-types@1.16.0'

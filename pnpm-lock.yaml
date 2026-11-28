@@ -174,8 +174,8 @@ importers:
         version: 13.346.0-beta.20250812191140(27a477c4e264977561cc5ec5bdd00d4d)
     devDependencies:
       '@lumphammer/investigator-fvtt-types':
-        specifier: ^1.13.2
-        version: 1.13.2
+        specifier: ^1.16.0
+        version: 1.16.0(csstype@3.2.3)
       fs-extra:
         specifier: ^11.4.1
         version: 11.4.1
@@ -767,6 +767,11 @@ packages:
 
   '@lumphammer/investigator-fvtt-types@1.13.2':
     resolution: {integrity: sha512-8rzXhXTiaynhAIGxyecOYsB4SU9EH9ZEgISOEK+sRsjImcqrrFCeCuZpPR+YJfg9j2+My2AanY76isLAgZf+JA==}
+
+  '@lumphammer/investigator-fvtt-types@1.16.0':
+    resolution: {integrity: sha512-5fG+ncYEbgnVEScifB23M/awF0MnESD1WczUtEvsWXl9W/UyvRXsli3z5X+kyDq3bcYHRjwvAxjZYXTxJxIjvw==}
+    peerDependencies:
+      csstype: ^3.1.0
 
   '@marijn/find-cluster-break@1.0.4':
     resolution: {integrity: sha512-Wy0V7+SGUjnF9/TkiM1hKVDPj7jKXduPNboMVtHTA8dySMURWqfg/JZ9E2Sq8JgSJmkl7k7Qe9FLeMSrSraWmQ==}
@@ -4819,6 +4824,10 @@ snapshots:
   '@lumphammer/investigator-fvtt-types@1.13.2':
     dependencies:
       '@lumphammer/shared-fvtt-bits': link:packages/shared-fvtt-bits
+
+  '@lumphammer/investigator-fvtt-types@1.16.0(csstype@3.2.3)':
+    dependencies:
+      csstype: 3.2.3
 
   '@marijn/find-cluster-break@1.0.4': {}
 
